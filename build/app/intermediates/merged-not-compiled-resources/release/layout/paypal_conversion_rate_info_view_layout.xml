@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payPalConversionRateInfoViewContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_space_wrapper"
+        app:layout_constraintBottom_toTopOf="@+id/button_space_wrapper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/paypal_checkout_padding_16x"
+            android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+            android:paddingBottom="@dimen/paypal_checkout_padding_32x"
+            >
+
+            <LinearLayout
+                android:id="@+id/conversionCurrencyHeaderLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/conversionLeftCurrencyTextView"
+                    style="@style/PYPLTextViewBody2Style"
+                    android:layout_width="@dimen/paypal_checkout_conversion_tabs_header_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+                    android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/paypal_checkout_textview_touch_target_padding"
+                    android:textColor="@color/paypal_checkout_primary_blue"
+                    tools:text="EUR"
+                    />
+
+                <TextView
+                    android:id="@+id/conversionRightCurrencyTextView"
+                    style="@style/PYPLTextViewBody2Style"
+                    android:layout_width="@dimen/paypal_checkout_conversion_tabs_header_width"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+                    android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/paypal_checkout_textview_touch_target_padding"
+                    android:text="@string/paypal_checkout_usd"
+                    android:textColor="@color/paypal_checkout_gray_color_600" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conversionCurrencyHeaderUnderLineLyt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/conversionCurrencyHeaderLyt"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/paypal_checkout_margin_24x"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionCurrencyHeaderLyt"
+                android:importantForAccessibility="no">
+
+                <View
+                    android:id="@+id/conversionLeftCurrencyUnderlineView"
+                    android:layout_width="@dimen/paypal_checkout_conversion_underline_view_width"
+                    android:layout_height="@dimen/paypal_checkout_conversion_underline_view_height"
+                    android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+                    android:layout_weight="1"
+                    android:background="@color/paypal_checkout_primary_blue"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/paypal_checkout_padding_4x" />
+
+                <View
+                    android:id="@+id/conversionRightCurrencyUnderlineView"
+                    android:layout_width="@dimen/paypal_checkout_conversion_underline_view_width"
+                    android:layout_height="@dimen/paypal_checkout_conversion_underline_view_height"
+                    android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+                    android:layout_weight="1"
+                    android:background="@color/paypal_checkout_gray_color_300"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="@dimen/paypal_checkout_padding_4x" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/conversionTotalPayTitleTextView"
+                style="@style/PYPLTextViewBody1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/paypal_checkout_padding_24x"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionCurrencyHeaderUnderLineLyt"
+                tools:text="You'll pay"/>
+
+            <TextView
+                android:id="@+id/conversionTotalAmountCurrencyTextView"
+                style="@style/PYPLTextViewDisplayStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="@dimen/paypal_checkout_padding_24x"
+                android:paddingBottom="@dimen/paypal_checkout_padding_24x"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionTotalPayTitleTextView"
+                tools:text="$11.00"/>
+
+            <TextView
+                android:id="@+id/conversionRightFineTextView"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/paypal_checkout_margin_24x"
+                android:text="@string/paypal_checkout_attention_message"
+                android:textAlignment="center"
+                android:textColor="@color/paypal_checkout_gray_color_600"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionTotalAmountCurrencyTextView" />
+
+            <TextView
+                android:id="@+id/conversionLeftRateTextView"
+                style="@style/PYPLTextViewBody1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/paypal_checkout_paypal_conversion_rate_dynamic"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionTotalAmountCurrencyTextView" />
+
+            <TextView
+                android:id="@+id/conversionLeftSpreadFineTextView"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:gravity="center_horizontal"
+                android:text="@string/paypal_checkout_currency_conversion_spread"
+                android:textColor="@color/paypal_checkout_gray_color_600"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/conversionLeftRateTextView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/button_space_wrapper"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paypal_checkout_padding_16x"
+        android:background="@color/paypal_checkout_white_color"
+        android:paddingStart="@dimen/paypal_checkout_padding_48x"
+        android:paddingLeft="@dimen/paypal_checkout_padding_48x"
+        android:paddingEnd="@dimen/paypal_checkout_padding_48x"
+        android:paddingRight="@dimen/paypal_checkout_padding_48x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.paypal.pyplcheckout.ui.feature.home.customviews.PayPalActionButton
+            android:id="@+id/conversionCurrencyButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:text="@string/paypal_checkout_use_card_issuer_s_conversion_rate" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

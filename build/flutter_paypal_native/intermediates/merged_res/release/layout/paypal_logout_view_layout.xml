@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payPalLogoutContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+    android:paddingStart="@dimen/paypal_checkout_padding_48x"
+    android:paddingLeft="@dimen/paypal_checkout_padding_48x"
+    android:paddingEnd="@dimen/paypal_checkout_padding_48x"
+    android:paddingRight="@dimen/paypal_checkout_padding_48x"
+    android:backgroundTint="@color/paypal_checkout_white_color">
+
+    <com.paypal.pyplcheckout.ui.feature.home.customviews.PayPalActionButton
+        android:id="@+id/userProfileLogoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="@string/paypal_checkout_logout" />
+
+    <ProgressBar
+        android:id="@+id/logout_progress_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</RelativeLayout>

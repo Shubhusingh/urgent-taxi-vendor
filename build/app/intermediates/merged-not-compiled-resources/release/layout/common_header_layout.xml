@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/imageViewBackButton"
+        android:layout_width="@dimen/margin_20x"
+        android:layout_height="@dimen/margin_20x"
+        android:layout_marginStart="@dimen/margin_20x"
+        android:layout_marginTop="@dimen/margin_32x"
+        android:contentDescription="@string/paypal_auth_otp_login_back_press"
+        android:src="@drawable/ic_arrow_back_icon"
+        app:layout_constraintBottom_toTopOf="@+id/publicCredentialView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageClose"
+        android:layout_width="@dimen/margin_32x"
+        android:layout_height="@dimen/margin_32x"
+        android:layout_marginTop="@dimen/margin_32x"
+        android:layout_marginRight="@dimen/margin_16x"
+        android:contentDescription="@string/paypal_auth_otp_login_close"
+        android:src="@drawable/ic_exit_icon"
+        app:layout_constraintBottom_toTopOf="@+id/publicCredentialView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/publicCredentialView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paypal_auth_background_color"
+        android:gravity="center"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="1">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/pub_credentials"
+                style="@style/PYPLTextViewTitleStyle4"
+                android:layout_width="@dimen/width_0"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_20x"
+                android:layout_marginTop="@dimen/margin_8x"
+                android:layout_marginBottom="@dimen/margin_8x"
+                android:layout_weight="0.7"
+                android:ellipsize="middle"
+                android:gravity="right"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_4x"
+                android:layout_marginEnd="@dimen/margin_20x"
+                android:background="@android:color/transparent"
+                android:minWidth="@dimen/width_0"
+                android:minHeight="@dimen/width_0"
+                android:text="@string/paypal_auth_otp_phone_login_screen_change"
+                android:textAllCaps="false"
+                android:textColor="@color/button_blue"
+                android:textSize="@dimen/text_size_18"
+                android:visibility="gone"
+                app:layout_constraintVertical_bias="0.659" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_20x"
+        android:layout_marginBottom="@dimen/margin_8x"
+        android:contentDescription="@string/paypal_auth_otp_login_paypal_logo"
+        android:src="@drawable/ic_paypal_mark_color"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/publicCredentialView" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_otp_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_60x"
+        android:layout_marginTop="@dimen/margin_12x"
+        android:layout_marginEnd="@dimen/margin_60x"
+        android:gravity="center_horizontal"
+        android:text="@string/paypal_auth_otp_login_log_in_fast_with_a_one_time_code"
+        android:textAppearance="@style/PYPLTextViewTitleStyle3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/text_send_code"
+        style="@style/PYPLTextViewTitleStyle4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_12x"
+        android:gravity="center_horizontal"
+        android:text="@string/paypal_auth_otp_login_we_ll_send_a_code_to"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_otp_login_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

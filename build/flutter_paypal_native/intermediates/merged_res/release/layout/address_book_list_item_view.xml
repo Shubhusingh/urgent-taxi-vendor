@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@style/PYPLListSelectorCardViewStyle"
+    android:id="@+id/list_selector_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+    android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+    android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+    android:layout_marginBottom="@dimen/width_0"
+    card_view:cardCornerRadius="@dimen/paypal_checkout_margin_12x"
+    app:cardElevation="@dimen/width_0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_4x">
+
+        <TextView
+            android:id="@+id/address_book_invalid_tv"
+            style="@style/PYPLTextViewBody2Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_4x"
+            android:background="@color/paypal_checkout_gray_color_200"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/paypal_checkout_padding_16x"
+            android:paddingLeft="@dimen/paypal_checkout_padding_16x"
+            android:paddingTop="@dimen/paypal_checkout_padding_8x"
+            android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+            android:paddingRight="@dimen/paypal_checkout_padding_16x"
+            android:paddingBottom="@dimen/paypal_checkout_padding_8x"
+            android:text="@string/paypal_checkout_unavailable"
+            android:textAlignment="gravity"
+            android:textColor="@color/paypal_checkout_gray_color_600"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/address_book_parent_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:orientation="vertical"
+            android:padding="@dimen/paypal_checkout_marginBottom_10"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address_book_invalid_tv">
+
+            <ImageView
+                android:id="@+id/country_selected_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toTopOf="@+id/address_book_first_line_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/address_book_ship_to_tv"
+                app:srcCompat="@drawable/paypal_checkout_ic_checkmark_circle_blue" />
+
+            <TextView
+                android:id="@+id/address_book_ship_to_tv"
+                style="@style/PYPLListSelectorItem1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/address_book_first_line_tv"
+                style="@style/PYPLListSelectorItem2Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_4x"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_book_ship_to_tv" />
+
+            <TextView
+                android:id="@+id/address_book_second_line_tv"
+                style="@style/PYPLListSelectorItem2Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_book_first_line_tv"
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/address_book_city_state_zip_tv"
+                style="@style/PYPLListSelectorItem2Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_book_second_line_tv" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

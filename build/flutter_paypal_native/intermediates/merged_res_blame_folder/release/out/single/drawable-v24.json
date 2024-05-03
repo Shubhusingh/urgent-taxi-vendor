@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_pp_smart_connect.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_pp_smart_connect.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_mc.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_mc.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_aurore.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_aurore.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_hipercard.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_hipercard.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_elo.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_elo.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_discover.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_discover.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_chase.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_chase.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_boa.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_boa.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_amex.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_amex.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_maestro.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_maestro.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_cofinoga.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_cofinoga.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_capitolone.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_capitolone.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_ebay_mastercard.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_ebay_mastercard.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_crypto.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_crypto.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_updatedvisa.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_updatedvisa.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_cb.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_cb.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_hiper.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_hiper.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_payment_card_gray_bgd_vector.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_payment_card_gray_bgd_vector.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_applynoshadow.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_applynoshadow.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_union_pay.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_union_pay.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_ppmc.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_ppmc.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v24/paypal_checkout_ic_crypto_bg.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-android-sdk-1.2.0-31:/drawable-v24/paypal_checkout_ic_crypto_bg.xml"
+    }
+]

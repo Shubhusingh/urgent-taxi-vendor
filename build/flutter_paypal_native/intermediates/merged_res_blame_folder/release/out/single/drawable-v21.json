@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/material_cursor_drawable.xml",
+        "source": "com.piccmaq.flutter_paypal_native-material-1.5.0-12:/drawable-v21/material_cursor_drawable.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/mtrl_navigation_bar_item_background.xml",
+        "source": "com.piccmaq.flutter_paypal_native-material-1.5.0-12:/drawable-v21/mtrl_navigation_bar_item_background.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/notification_action_background.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/abc_dialog_material_background.xml",
+        "source": "com.piccmaq.flutter_paypal_native-appcompat-1.4.2-0:/drawable-v21/abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/abc_edit_text_material.xml",
+        "source": "com.piccmaq.flutter_paypal_native-appcompat-1.4.2-0:/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "com.piccmaq.flutter_paypal_native-appcompat-1.4.2-0:/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/m3_tabs_background.xml",
+        "source": "com.piccmaq.flutter_paypal_native-material-1.5.0-12:/drawable-v21/m3_tabs_background.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/abc_btn_colored_material.xml",
+        "source": "com.piccmaq.flutter_paypal_native-appcompat-1.4.2-0:/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/drawable-v21/abc_list_divider_material.xml",
+        "source": "com.piccmaq.flutter_paypal_native-appcompat-1.4.2-0:/drawable-v21/abc_list_divider_material.xml"
+    }
+]

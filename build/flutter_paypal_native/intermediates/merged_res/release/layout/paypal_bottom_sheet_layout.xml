@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior">
+
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation"
+        app:layout_anchor="@+id/nested_scroll_view"
+        app:layout_anchorGravity="top|center"
+        app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior" />
+
+    <RelativeLayout
+        android:id="@+id/body_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paypal_checkout_white_color"
+        android:backgroundTint="@color/paypal_checkout_white_color" />
+
+    <RelativeLayout
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior" />
+
+
+</LinearLayout>
+

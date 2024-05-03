@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/shipping_method__selector_card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+    android:layout_marginTop="@dimen/paypal_checkout_padding_8x"
+    android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+    android:layout_marginBottom="@dimen/width_0"
+    android:theme="@style/PYPLListSelectorCardViewStyle"
+    app:cardElevation="@dimen/width_0"
+    card_view:cardCornerRadius="@dimen/paypal_checkout_margin_12x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_4x"
+        android:padding="@dimen/paypal_checkout_marginBottom_10">
+
+        <TextView
+            android:id="@+id/shipping_method_tv"
+            style="@style/PYPLListSelectorItem1Style"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            app:layout_constraintEnd_toStartOf="@id/shipping_method_selected_cb"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/shipping_price_tv"
+            style="@style/PYPLListSelectorItem2Style"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/paypal_checkout_margin_4x"
+            android:paddingBottom="@dimen/paypal_checkout_padding_12x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/shipping_method_tv"
+            app:layout_constraintTop_toBottomOf="@id/shipping_method_tv"
+            tools:text="$108.99" />
+
+        <ImageView
+            android:id="@+id/shipping_method_selected_cb"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/shipping_method_tv"
+            app:srcCompat="@drawable/paypal_checkout_ic_checkmark_circle_blue" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

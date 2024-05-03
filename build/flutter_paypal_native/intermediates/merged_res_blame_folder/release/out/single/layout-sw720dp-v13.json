@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/text_info_body_view.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/text_info_body_view.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/activity_single_select_challenge_view.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/activity_single_select_challenge_view.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/activity_otp_challenge_view.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/activity_otp_challenge_view.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/activity_oob_challenge_view.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/activity_oob_challenge_view.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/progress_view_2.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/progress_view_2.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/challenge_toolbar_cf.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/challenge_toolbar_cf.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/challenge_labelview_cf.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/challenge_labelview_cf.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/challege_footer.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/challege_footer.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-sw720dp-v13/activity_multi_select_challenge_view.xml",
+        "source": "com.piccmaq.flutter_paypal_native-jetified-cardinalmobilesdk-2.2.7-2-34:/layout-sw720dp-v13/activity_multi_select_challenge_view.xml"
+    }
+]

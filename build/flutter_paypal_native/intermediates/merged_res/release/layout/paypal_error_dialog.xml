@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/paypal_checkout_padding_24x">
+
+        <TextView
+            android:id="@+id/error_dialog_title"
+            style="@style/PYPLTextViewTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/paypal_checkout_margin_4x"
+            android:text="@string/paypal_checkout_error" />
+
+        <TextView
+            android:id="@+id/error_message"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/paypal_checkout_margin_4x" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_8x">
+
+            <TextView
+                android:id="@+id/error_code"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="center_vertical"
+                android:textAlignment="gravity"
+                android:layout_alignParentLeft="true"
+                android:drawableTint="@color/paypal_checkout_gray_color_501"
+                android:drawableStart="@drawable/paypal_checkout_ic_warning_grey_24dp"
+                android:drawableLeft="@drawable/paypal_checkout_ic_warning_grey_24dp"
+                android:textColor="@color/paypal_checkout_gray_color_500" />
+
+            <Button
+                android:id="@+id/ok_button"
+                style="@style/PYPLTextViewButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/error_code"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:text="@string/paypal_checkout_go_back_btn" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</merge>

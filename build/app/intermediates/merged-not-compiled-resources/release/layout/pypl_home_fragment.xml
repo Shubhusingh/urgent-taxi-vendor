@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.feature.home.fragments.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/homeBgdMaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/paypal_checkout_background_scrim_color"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/paysheet_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/payment_bottom_sheet_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_anchorGravity="bottom"
+            app:layout_behavior="com.paypal.pyplcheckout.ui.feature.home.customviews.AutoCloseBottomSheetBehavior">
+
+
+            <LinearLayout
+                android:id="@+id/footer_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/paypal_checkout_white_color"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/paypal_checkout_padding_8x"
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/content_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/footer_container"
+                tools:showIn="@layout/pypl_home_fragment">
+
+                <LinearLayout
+                    android:id="@+id/header_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation"
+                    android:orientation="vertical" />
+
+                <androidx.core.widget.NestedScrollView
+                    android:id="@+id/nested_scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/paypal_checkout_margin_32x"
+                    android:background="@drawable/paypal_checkout_rounded_dialog"
+                    android:fadeScrollbars="true"
+                    android:fadingEdgeLength="@dimen/paypal_checkout_paysheet_fading_length"
+                    android:requiresFadingEdge="vertical"
+                    android:scrollbars="vertical">
+
+                    <com.paypal.pyplcheckout.ui.feature.home.customviews.PayPalHomeBodyContainer
+                        android:id="@+id/body_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/paypal_checkout_white_color"
+                        android:orientation="vertical" />
+
+                </androidx.core.widget.NestedScrollView>
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center_horizontal"
+            android:orientation="vertical"
+            app:layout_anchor="@id/payment_bottom_sheet_id"
+            app:layout_anchorGravity="top" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</RelativeLayout>

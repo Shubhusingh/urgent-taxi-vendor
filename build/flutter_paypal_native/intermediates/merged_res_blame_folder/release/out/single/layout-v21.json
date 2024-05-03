@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-v21/notification_action_tombstone.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-v21/notification_template_icon_group.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-v21/notification_template_custom_big.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/layout-v21/notification_action.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/layout-v21/notification_action.xml"
+    }
+]

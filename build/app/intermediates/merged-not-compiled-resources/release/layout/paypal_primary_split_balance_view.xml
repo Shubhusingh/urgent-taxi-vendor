@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/start_horizontal_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="@dimen/paypal_checkout_home_item_guide" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/end_horizontal_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="@dimen/paypal_checkout_home_item_guide" />
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16x"
+        android:layout_marginLeft="@dimen/paypal_checkout_margin_16x"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16x"
+        android:layout_marginRight="@dimen/paypal_checkout_margin_16x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/primary_split_balance_info_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paypal_checkout_ic_pplogo3"
+        app:layout_constraintLeft_toLeftOf="@id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.paypal.pyplcheckout.ui.feature.home.customviews.ToggleSwitchView
+        android:id="@+id/primary_split_balance_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/paypal_checkout_ic_pplogo3"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/primary_split_balance_error_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/paypal_checkout_balance_error_elevation"
+        android:src="@drawable/paypal_checkout_ic_attention"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/primary_split_balance_error_tv"
+        style="@style/PYPLTextViewCaption1Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/paypal_checkout_warning_shape_bg"
+        android:drawableStart="@drawable/paypal_checkout_ic_attention"
+        android:drawableLeft="@drawable/paypal_checkout_ic_attention"
+        android:drawableEnd="@drawable/paypal_checkout_ic_close"
+        android:drawableRight="@drawable/paypal_checkout_ic_close"
+        android:drawablePadding="@dimen/paypal_checkout_padding_4x"
+        android:elevation="@dimen/paypal_checkout_divider_height"
+        android:gravity="center_vertical"
+        android:padding="@dimen/paypal_checkout_padding_16x"
+        android:textAlignment="gravity"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintLeft_toRightOf="@id/view"
+        app:layout_constraintRight_toRightOf="@id/view"
+        app:layout_constraintStart_toEndOf="@id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/paypal_checkout_dummy_error_msg_dont_translate"
+        tools:visibility="gone" />
+
+    <TextView
+        android:id="@+id/primary_split_balance_amount_tv"
+        style="@style/PYPLTextViewBody2Style"
+        android:layout_width="@dimen/paypal_checkout_match_constraint"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="start|center_vertical"
+        android:maxLines="2"
+        android:textAlignment="gravity"
+        android:paddingTop="@dimen/paypal_checkout_padding_16x"
+        android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+        app:layout_constraintEnd_toEndOf="@id/end_horizontal_guide"
+        app:layout_constraintLeft_toRightOf="@id/start_horizontal_guide"
+        app:layout_constraintRight_toRightOf="@id/end_horizontal_guide"
+        app:layout_constraintStart_toEndOf="@id/start_horizontal_guide"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Use your $39.89 USD balance" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

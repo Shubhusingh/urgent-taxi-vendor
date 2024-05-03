@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/payPal_crypto_terms_and_conditions_header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/paypal_checkout_rounded_dialog"
+    android:backgroundTint="@color/paypal_checkout_white_color"
+    android:padding="@dimen/paypal_checkout_padding_16x"
+    tools:layout_editor_absoluteX="0dp">
+
+</androidx.constraintlayout.widget.ConstraintLayout>

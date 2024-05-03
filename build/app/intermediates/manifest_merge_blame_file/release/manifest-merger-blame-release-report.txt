@@ -1,0 +1,1679 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cabme.driver"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+11-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:4:5-77
+11-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:4:22-74
+12    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+12-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:5:5-85
+12-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:5:22-82
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:6:5-79
+13-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+14-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:7:5-81
+14-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:7:22-78
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:8:5-67
+15-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:8:22-64
+16    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
+16-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:9:5-11:53
+16-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:10:9-61
+17
+18    <queries>
+18-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:14:5-30:15
+19        <intent>
+19-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:15:9-19:18
+20            <action android:name="android.intent.action.VIEW" />
+20-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+20-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+21
+22            <category android:name="android.intent.category.BROWSABLE" />
+22-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+22-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+23
+24            <data android:scheme="https" />
+24-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+24-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+25        </intent>
+26        <!-- If your app checks for SMS support -->
+27        <intent>
+27-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:21:9-24:18
+28            <action android:name="android.intent.action.VIEW" />
+28-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+28-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+29
+30            <data android:scheme="sms" />
+30-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+30-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+31        </intent>
+32        <!-- If your app checks for call support -->
+33        <intent>
+33-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:26:9-29:18
+34            <action android:name="android.intent.action.VIEW" />
+34-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+34-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+35
+36            <data android:scheme="tel" />
+36-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+36-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+37        </intent>
+38        <intent>
+38-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+39            <action android:name="android.intent.action.GET_CONTENT" />
+39-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+39-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+40
+41            <data android:mimeType="*/*" />
+41-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+42        </intent>
+43        <intent>
+43-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-10:18
+44            <action android:name="android.support.customtabs.action.CustomTabsService" />
+44-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-90
+44-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:9:21-87
+45        </intent>
+46
+47        <package android:name="com.google.android.apps.maps" />
+47-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-64
+47-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:8:18-61
+48        <package android:name="com.google.android.apps.mapslite" />
+48-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-68
+48-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:9:18-65
+49        <package android:name="com.autonavi.minimap" />
+49-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-56
+49-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:10:18-53
+50        <package android:name="com.baidu.BaiduMap" />
+50-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-54
+50-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:11:18-51
+51        <package android:name="com.waze" />
+51-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-44
+51-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:12:18-41
+52        <package android:name="ru.yandex.yandexnavi" />
+52-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:13:9-56
+52-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:13:18-53
+53        <package android:name="ru.yandex.yandexmaps" />
+53-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-56
+53-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:14:18-53
+54        <package android:name="com.citymapper.app.release" />
+54-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:15:9-62
+54-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:15:18-59
+55        <package android:name="com.mapswithme.maps.pro" />
+55-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-59
+55-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:16:18-56
+56        <package android:name="net.osmand" />
+56-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:17:9-46
+56-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:17:18-43
+57        <package android:name="net.osmand.plus" />
+57-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-51
+57-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:18:18-48
+58        <package android:name="ru.dublgis.dgismobile" />
+58-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-57
+58-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:19:18-54
+59        <package android:name="com.tencent.map" />
+59-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-51
+59-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:20:18-48
+60        <package android:name="com.here.app.maps" />
+60-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:21:9-53
+60-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:21:18-50
+61        <package android:name="com.huawei.maps.app" />
+61-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-55
+61-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:22:18-52
+62        <package android:name="com.alk.copilot.mapviewer" />
+62-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-61
+62-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:23:18-58
+63        <package android:name="com.tomtom.gplay.navapp" />
+63-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:24:9-59
+63-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:24:18-56
+64        <package android:name="com.tomtom.gplay.navapp.gofleet" />
+64-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:25:9-67
+64-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:25:18-64
+65        <package android:name="com.sygic.truck" />
+65-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-51
+65-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:26:18-48
+66        <package android:name="nl.flitsmeister" />
+66-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-51
+66-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:27:18-48
+67        <package android:name="nl.flitsmeister.flux" />
+67-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-56
+67-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:28:18-53
+68        <package android:name="com.nhn.android.nmap" />
+68-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:29:9-56
+68-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:29:18-53
+69        <package android:name="net.daum.android.map" />
+69-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:30:9-56
+69-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:30:18-53
+70        <package android:name="com.skt.tmap.ku" />
+70-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:31:9-51
+70-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:31:18-48
+71        <package android:name="cz.seznam.mapy" />
+71-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:32:9-50
+71-->[:map_launcher] D:\UrgentTaxi\cabme_driver\build\map_launcher\intermediates\merged_manifest\release\AndroidManifest.xml:32:18-47
+72        <package android:name="com.tencent.mm" /> <!-- Added to check if Chrome is installed for browser-based payment authentication (e.g. 3DS1). -->
+72-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:14:9-50
+72-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:14:18-47
+73        <package android:name="com.android.chrome" /> <!-- Added to check the default browser that will host the AuthFlow. -->
+73-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:11:9-54
+73-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:11:18-51
+74        <intent>
+74-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:13:9-17:18
+75            <action android:name="android.intent.action.VIEW" />
+75-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+75-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+76
+77            <data android:scheme="http" />
+77-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+77-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+78        </intent> <!-- Specific apps you interact with, eg: -->
+79        <package android:name="com.paytm.pgsdk.TransactionManager.PAYTM_APP_PACKAGE" />
+79-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:12:9-88
+79-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:12:18-85
+80        <!--
+81             Specific intents you query for,
+82             eg: for a custom share UI
+83        -->
+84        <intent>
+84-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:17:9-19:18
+85            <action android:name="android.intent.action.MAIN" />
+85-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:17-69
+85-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:25-66
+86        </intent>
+87        <intent>
+87-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:11:9-17:18
+88            <action android:name="android.intent.action.VIEW" />
+88-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+88-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+89
+90            <data
+90-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+91                android:mimeType="*/*"
+92                android:scheme="*" />
+92-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+93        </intent>
+94        <intent>
+94-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:18:9-27:18
+95            <action android:name="android.intent.action.VIEW" />
+95-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+95-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+96
+97            <category android:name="android.intent.category.BROWSABLE" />
+97-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+97-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+98
+99            <data
+99-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+100                android:host="pay"
+101                android:mimeType="*/*"
+102                android:scheme="upi" />
+102-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+103        </intent>
+104        <intent>
+104-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:31:9-35:18
+105            <action android:name="android.intent.action.SEND" />
+105-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:32:13-65
+105-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:32:21-62
+106
+107            <data android:mimeType="*/*" />
+107-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+108        </intent>
+109        <intent>
+109-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:36:9-38:18
+110            <action android:name="rzp.device_token.share" />
+110-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:37:13-61
+110-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:37:21-58
+111        </intent>
+112    </queries>
+113
+114    <uses-permission android:name="android.permission.WAKE_LOCK" />
+114-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:8:5-68
+114-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:8:22-65
+115    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+115-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-79
+115-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-76
+116    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+116-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-77
+116-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-74
+117    <uses-permission android:name="android.permission.VIBRATE" />
+117-->[:flutter_local_notifications] D:\UrgentTaxi\cabme_driver\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-66
+117-->[:flutter_local_notifications] D:\UrgentTaxi\cabme_driver\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-63
+118    <uses-permission
+118-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-9:38
+119        android:name="android.permission.READ_EXTERNAL_STORAGE"
+119-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-64
+120        android:maxSdkVersion="32" />
+120-->[:file_picker] D:\UrgentTaxi\cabme_driver\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-35
+121    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+121-->[:video_compress] D:\UrgentTaxi\cabme_driver\build\video_compress\intermediates\merged_manifest\release\AndroidManifest.xml:7:5-81
+121-->[:video_compress] D:\UrgentTaxi\cabme_driver\build\video_compress\intermediates\merged_manifest\release\AndroidManifest.xml:7:22-78
+122    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+122-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:5-82
+122-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:26:22-79
+123    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+123-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:25:5-79
+123-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:25:22-76
+124    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+124-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:26:5-88
+124-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:26:22-85
+125    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+125-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:27:5-82
+125-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:27:22-79
+126    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+126-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\ac56c07923fd62dc6181b002640e8e97\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:5-98
+126-->[com.google.android.recaptcha:recaptcha:18.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\ac56c07923fd62dc6181b002640e8e97\transformed\jetified-recaptcha-18.4.0\AndroidManifest.xml:9:22-95
+127    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+127-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:5-110
+127-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:26:22-107
+128
+129    <uses-feature
+129-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:26:5-28:35
+130        android:glEsVersion="0x00020000"
+130-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:27:9-41
+131        android:required="true" />
+131-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:28:9-32
+132
+133    <uses-permission android:name="android.permission.USE_BIOMETRIC" /> <!-- suppress DeprecatedClassUsageInspection -->
+133-->[androidx.biometric:biometric:1.2.0-alpha03] C:\Users\Shubham\.gradle\caches\transforms-3\f1c4ff28be5accccdddbc798032cce55\transformed\biometric-1.2.0-alpha03\AndroidManifest.xml:24:5-72
+133-->[androidx.biometric:biometric:1.2.0-alpha03] C:\Users\Shubham\.gradle\caches\transforms-3\f1c4ff28be5accccdddbc798032cce55\transformed\biometric-1.2.0-alpha03\AndroidManifest.xml:24:22-69
+134    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+134-->[androidx.biometric:biometric:1.2.0-alpha03] C:\Users\Shubham\.gradle\caches\transforms-3\f1c4ff28be5accccdddbc798032cce55\transformed\biometric-1.2.0-alpha03\AndroidManifest.xml:27:5-74
+134-->[androidx.biometric:biometric:1.2.0-alpha03] C:\Users\Shubham\.gradle\caches\transforms-3\f1c4ff28be5accccdddbc798032cce55\transformed\biometric-1.2.0-alpha03\AndroidManifest.xml:27:22-71
+135
+136    <permission
+136-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:22:5-24:47
+137        android:name="com.cabme.driver.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+137-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:23:9-81
+138        android:protectionLevel="signature" />
+138-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:24:9-44
+139
+140    <uses-permission android:name="com.cabme.driver.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+140-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:26:5-97
+140-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:26:22-94
+141
+142    <application
+143        android:name="android.app.Application"
+143-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:34:9-42
+144        android:allowBackup="true"
+144-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:15:9-35
+145        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+145-->[androidx.core:core:1.12.0] C:\Users\Shubham\.gradle\caches\transforms-3\c3458691ef2562e7343aa923a92da2e9\transformed\core-1.12.0\AndroidManifest.xml:28:18-86
+146        android:extractNativeLibs="false"
+147        android:icon="@mipmap/ic_launcher"
+147-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:35:9-43
+148        android:label="Urgent Taxi"
+148-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:36:9-36
+149        android:supportsRtl="true" >
+149-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:16:9-35
+150        <activity
+150-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:38:9-67:20
+151            android:name="com.cabme.driver.MainActivity"
+151-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:39:13-57
+152            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+152-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:40:13-163
+153            android:exported="true"
+153-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:41:13-36
+154            android:hardwareAccelerated="true"
+154-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:42:13-47
+155            android:launchMode="singleTop"
+155-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:43:13-43
+156            android:theme="@style/LaunchTheme"
+156-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:44:13-47
+157            android:windowSoftInputMode="adjustResize" >
+157-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:45:13-55
+158
+159            <!--
+160                 Specifies an Android theme to apply to this Activity as soon as
+161                 the Android process has started. This theme is visible to the user
+162                 while the Flutter UI initializes. After that, this theme continues
+163                 to determine the Window background behind the Flutter UI.
+164            -->
+165            <meta-data
+165-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:50:13-52:57
+166                android:name="io.flutter.embedding.android.NormalTheme"
+166-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:51:17-72
+167                android:resource="@style/NormalTheme" />
+167-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:52:17-54
+168
+169            <intent-filter>
+169-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:54:13-57:29
+170                <action android:name="android.intent.action.MAIN" />
+170-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:17-69
+170-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:25-66
+171
+172                <category android:name="android.intent.category.LAUNCHER" />
+172-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:56:17-77
+172-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:56:27-74
+173            </intent-filter>
+174            <intent-filter>
+174-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:59:13-62:29
+175                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+175-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:60:17-69
+175-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:60:25-66
+176
+177                <category android:name="android.intent.category.DEFAULT" />
+177-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+177-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+178            </intent-filter>
+179            <intent-filter>
+179-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:64:13-66:29
+180                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+180-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:17-78
+180-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:25-75
+181            </intent-filter>
+182        </activity>
+183
+184        <!--
+185             Don't delete the meta-data below.
+186             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+187        -->
+188        <meta-data
+188-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:72:9-74:33
+189            android:name="flutterEmbedding"
+189-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:73:13-44
+190            android:value="2" />
+190-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:74:13-30
+191        <!--
+192             <meta-data
+193            android:name="com.google.android.geo.API_KEY"
+194            android:value="Replace with your API key" />
+195        -->
+196
+197        <meta-data
+197-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:79:9-81:44
+198            android:name="com.google.firebase.messaging.default_notification_channel_id"
+198-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:80:13-89
+199            android:value="cabme-driver" />
+199-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:81:13-41
+200        <meta-data
+200-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:82:9-84:54
+201            android:name="com.google.firebase.messaging.default_notification_icon"
+201-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:83:13-83
+202            android:resource="@mipmap/ic_launcher" />
+202-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:84:13-51
+203
+204        <service
+204-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:86:9-92:19
+205            android:name="com.example.app.backgroundService"
+205-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:87:13-61
+206            android:exported="false" >
+206-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:88:13-37
+207            <intent-filter>
+207-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:89:13-91:29
+208                <action android:name="com.example.app.START_BACKGROUND" />
+208-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:90:17-75
+208-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:90:25-72
+209            </intent-filter>
+210        </service>
+211
+212        <receiver
+212-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:93:9-95:40
+213            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+213-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:94:13-101
+214            android:exported="false" />
+214-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:95:13-37
+215
+216        <service
+216-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-17:72
+217            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+217-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-107
+218            android:exported="false"
+218-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-37
+219            android:permission="android.permission.BIND_JOB_SERVICE" />
+219-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-69
+220        <service
+220-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:9-24:19
+221            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+221-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-97
+222            android:exported="false" >
+222-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-37
+223            <intent-filter>
+223-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:64:13-66:29
+224                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+224-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:17-78
+224-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:25-75
+225            </intent-filter>
+226        </service>
+227
+228        <receiver
+228-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:26:9-33:20
+229            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+229-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:27:13-98
+230            android:exported="true"
+230-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-36
+231            android:permission="com.google.android.c2dm.permission.SEND" >
+231-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-73
+232            <intent-filter>
+232-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:29
+233                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+233-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-81
+233-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:25-78
+234            </intent-filter>
+235        </receiver>
+236
+237        <service
+237-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:35:9-39:19
+238            android:name="com.google.firebase.components.ComponentDiscoveryService"
+238-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:35:18-89
+239            android:directBootAware="true"
+239-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:32:13-43
+240            android:exported="false" >
+240-->[com.google.firebase:firebase-analytics-ktx:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\3c3c89c0e8682d36484231bc641eb364\transformed\jetified-firebase-analytics-ktx-21.6.1\AndroidManifest.xml:10:13-37
+241            <meta-data
+241-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:36:13-38:85
+242                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+242-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:37:17-128
+243                android:value="com.google.firebase.components.ComponentRegistrar" />
+243-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:17-82
+244            <meta-data
+244-->[:cloud_firestore] D:\UrgentTaxi\cabme_driver\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+245                android:name="com.google.firebase.components:io.flutter.plugins.firebase.firestore.FlutterFirebaseFirestoreRegistrar"
+245-->[:cloud_firestore] D:\UrgentTaxi\cabme_driver\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-134
+246                android:value="com.google.firebase.components.ComponentRegistrar" />
+246-->[:cloud_firestore] D:\UrgentTaxi\cabme_driver\build\cloud_firestore\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+247            <meta-data
+247-->[:firebase_auth] D:\UrgentTaxi\cabme_driver\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+248                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+248-->[:firebase_auth] D:\UrgentTaxi\cabme_driver\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+249                android:value="com.google.firebase.components.ComponentRegistrar" />
+249-->[:firebase_auth] D:\UrgentTaxi\cabme_driver\build\firebase_auth\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+250            <meta-data
+250-->[:firebase_storage] D:\UrgentTaxi\cabme_driver\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+251                android:name="com.google.firebase.components:io.flutter.plugins.firebase.storage.FlutterFirebaseAppRegistrar"
+251-->[:firebase_storage] D:\UrgentTaxi\cabme_driver\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-126
+252                android:value="com.google.firebase.components.ComponentRegistrar" />
+252-->[:firebase_storage] D:\UrgentTaxi\cabme_driver\build\firebase_storage\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+253            <meta-data
+253-->[:firebase_core] D:\UrgentTaxi\cabme_driver\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-11:85
+254                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+254-->[:firebase_core] D:\UrgentTaxi\cabme_driver\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:10:17-124
+255                android:value="com.google.firebase.components.ComponentRegistrar" />
+255-->[:firebase_core] D:\UrgentTaxi\cabme_driver\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:17-82
+256            <meta-data
+256-->[com.google.firebase:firebase-analytics-ktx:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\3c3c89c0e8682d36484231bc641eb364\transformed\jetified-firebase-analytics-ktx-21.6.1\AndroidManifest.xml:11:13-13:85
+257                android:name="com.google.firebase.components:com.google.firebase.analytics.ktx.FirebaseAnalyticsLegacyRegistrar"
+257-->[com.google.firebase:firebase-analytics-ktx:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\3c3c89c0e8682d36484231bc641eb364\transformed\jetified-firebase-analytics-ktx-21.6.1\AndroidManifest.xml:12:17-129
+258                android:value="com.google.firebase.components.ComponentRegistrar" />
+258-->[com.google.firebase:firebase-analytics-ktx:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\3c3c89c0e8682d36484231bc641eb364\transformed\jetified-firebase-analytics-ktx-21.6.1\AndroidManifest.xml:13:17-82
+259            <meta-data
+259-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\a37b540d2cb3eec87448761ed529254f\transformed\jetified-firebase-auth-ktx-22.3.1\AndroidManifest.xml:11:13-13:85
+260                android:name="com.google.firebase.components:com.google.firebase.auth.ktx.FirebaseAuthLegacyRegistrar"
+260-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\a37b540d2cb3eec87448761ed529254f\transformed\jetified-firebase-auth-ktx-22.3.1\AndroidManifest.xml:12:17-119
+261                android:value="com.google.firebase.components.ComponentRegistrar" />
+261-->[com.google.firebase:firebase-auth-ktx:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\a37b540d2cb3eec87448761ed529254f\transformed\jetified-firebase-auth-ktx-22.3.1\AndroidManifest.xml:13:17-82
+262            <meta-data
+262-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:57:13-59:85
+263                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingKtxRegistrar"
+263-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:58:17-122
+264                android:value="com.google.firebase.components.ComponentRegistrar" />
+264-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:59:17-82
+265            <meta-data
+265-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:60:13-62:85
+266                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+266-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:61:17-119
+267                android:value="com.google.firebase.components.ComponentRegistrar" />
+267-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:62:17-82
+268            <meta-data
+268-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:17:13-19:85
+269                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+269-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:18:17-122
+270                android:value="com.google.firebase.components.ComponentRegistrar" />
+270-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:19:17-82
+271            <meta-data
+271-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:20:13-22:85
+272                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+272-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:21:17-111
+273                android:value="com.google.firebase.components.ComponentRegistrar" />
+273-->[com.google.firebase:firebase-firestore:24.11.0] C:\Users\Shubham\.gradle\caches\transforms-3\a7caec45ffe21ae0f6a8fa21c5117a65\transformed\jetified-firebase-firestore-24.11.0\AndroidManifest.xml:22:17-82
+274            <meta-data
+274-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:69:13-71:85
+275                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+275-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:70:17-109
+276                android:value="com.google.firebase.components.ComponentRegistrar" />
+276-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:71:17-82
+277            <meta-data
+277-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\d74d587027016fccc60910fc5aba6fdf\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+278                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+278-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\d74d587027016fccc60910fc5aba6fdf\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+279                android:value="com.google.firebase.components.ComponentRegistrar" />
+279-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\d74d587027016fccc60910fc5aba6fdf\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+280            <meta-data
+280-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:37:13-39:85
+281                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+281-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:38:17-139
+282                android:value="com.google.firebase.components.ComponentRegistrar" />
+282-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:39:17-82
+283            <meta-data
+283-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+284                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+284-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+285                android:value="com.google.firebase.components.ComponentRegistrar" />
+285-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+286            <meta-data
+286-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+287                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+287-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+288                android:value="com.google.firebase.components.ComponentRegistrar" />
+288-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\31e7e9b0bdbb97eca2450097632ef156\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+289            <meta-data
+289-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:30:13-32:85
+290                android:name="com.google.firebase.components:com.google.firebase.storage.FirebaseStorageKtxRegistrar"
+290-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:31:17-118
+291                android:value="com.google.firebase.components.ComponentRegistrar" />
+291-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:32:17-82
+292            <meta-data
+292-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:33:13-35:85
+293                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+293-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:34:17-107
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-storage:20.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\efa2b370f0c54d41e454701c62314e73\transformed\jetified-firebase-storage-20.3.0\AndroidManifest.xml:35:17-82
+295            <meta-data
+295-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:25:13-27:85
+296                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckKtxRegistrar"
+296-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:26:17-120
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:27:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:28:13-30:85
+299                android:name="com.google.firebase.components:com.google.firebase.appcheck.FirebaseAppCheckRegistrar"
+299-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:29:17-117
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-appcheck:17.1.2] C:\Users\Shubham\.gradle\caches\transforms-3\8d10a8efa431f8ecf611ef141af79de7\transformed\jetified-firebase-appcheck-17.1.2\AndroidManifest.xml:30:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\d684f004cb248b349b365cd13e6c81a4\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:12:13-14:85
+302                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+302-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\d684f004cb248b349b365cd13e6c81a4\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:13:17-116
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-common-ktx:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\d684f004cb248b349b365cd13e6c81a4\transformed\jetified-firebase-common-ktx-20.4.3\AndroidManifest.xml:14:17-82
+304            <meta-data
+304-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:35:13-37:85
+305                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+305-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:36:17-109
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:37:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Shubham\.gradle\caches\transforms-3\52060631f4de04aead521adb1144821b\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+308                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+308-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Shubham\.gradle\caches\transforms-3\52060631f4de04aead521adb1144821b\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Shubham\.gradle\caches\transforms-3\52060631f4de04aead521adb1144821b\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+310        </service>
+311
+312        <provider
+312-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:41:9-45:38
+313            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+313-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:42:13-102
+314            android:authorities="com.cabme.driver.flutterfirebasemessaginginitprovider"
+314-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:13-88
+315            android:exported="false"
+315-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-37
+316            android:initOrder="99" />
+316-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-35
+317
+318        <service
+318-->[:geolocator_android] D:\UrgentTaxi\cabme_driver\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-12:56
+319            android:name="com.baseflow.geolocator.GeolocatorLocationService"
+319-->[:geolocator_android] D:\UrgentTaxi\cabme_driver\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-77
+320            android:enabled="true"
+320-->[:geolocator_android] D:\UrgentTaxi\cabme_driver\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-35
+321            android:exported="false"
+321-->[:geolocator_android] D:\UrgentTaxi\cabme_driver\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-37
+322            android:foregroundServiceType="location" />
+322-->[:geolocator_android] D:\UrgentTaxi\cabme_driver\build\geolocator_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-53
+323
+324        <activity
+324-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:14:9-18:47
+325            android:name="com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity"
+325-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-104
+326            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density"
+326-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:16:13-137
+327            android:exported="false"
+327-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-37
+328            android:theme="@style/AppTheme" />
+328-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-44
+329        <activity
+329-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-22:55
+330            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity"
+330-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-112
+331            android:exported="false"
+331-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+332            android:theme="@style/ThemeTransparent" />
+332-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-52
+333        <activity
+333-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:23:9-26:55
+334            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivity"
+334-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-106
+335            android:exported="false"
+335-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-37
+336            android:theme="@style/ThemeTransparent" />
+336-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:26:13-52
+337        <activity
+337-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:27:9-31:55
+338            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivitySingleInstance"
+338-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-126
+339            android:exported="false"
+339-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-37
+340            android:launchMode="singleInstance"
+340-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-48
+341            android:theme="@style/ThemeTransparent" />
+341-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-52
+342        <activity
+342-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:32:9-36:55
+343            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.TrustedWebActivitySingleInstance"
+343-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:33:13-120
+344            android:exported="false"
+344-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:34:13-37
+345            android:launchMode="singleInstance"
+345-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:35:13-48
+346            android:theme="@style/ThemeTransparent" />
+346-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:36:13-52
+347
+348        <receiver
+348-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:38:9-41:40
+349            android:name="com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver"
+349-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:39:13-111
+350            android:enabled="true"
+350-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:40:13-35
+351            android:exported="false" />
+351-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:41:13-37
+352
+353        <meta-data
+353-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-45:36
+354            android:name="io.flutter.embedded_views_preview"
+354-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-61
+355            android:value="true" />
+355-->[:flutter_inappwebview] D:\UrgentTaxi\cabme_driver\build\flutter_inappwebview\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-33
+356
+357        <provider
+357-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:9-17:20
+358            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+358-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-82
+359            android:authorities="com.cabme.driver.flutter.image_provider"
+359-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+360            android:exported="false"
+360-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+361            android:grantUriPermissions="true" >
+361-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-47
+362            <meta-data
+362-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-16:75
+363                android:name="android.support.FILE_PROVIDER_PATHS"
+363-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:17-67
+364                android:resource="@xml/flutter_image_picker_file_paths" />
+364-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-72
+365        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+366        <service
+366-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-31:19
+367            android:name="com.google.android.gms.metadata.ModuleDependencies"
+367-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-78
+368            android:enabled="false"
+368-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-36
+369            android:exported="false" >
+369-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+370            <intent-filter>
+370-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-26:29
+371                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+371-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:25:17-94
+371-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:25:25-91
+372            </intent-filter>
+373
+374            <meta-data
+374-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:28:13-30:36
+375                android:name="photopicker_activity:0:required"
+375-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-63
+376                android:value="" />
+376-->[:image_picker_android] D:\UrgentTaxi\cabme_driver\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:30:17-33
+377        </service>
+378
+379        <activity
+379-->[:url_launcher_android] D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:8:9-11:74
+380            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+380-->[:url_launcher_android] D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:9:13-74
+381            android:exported="false"
+381-->[:url_launcher_android] D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:13-37
+382            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+382-->[:url_launcher_android] D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-71
+383
+384        <service
+384-->[:location] D:\UrgentTaxi\cabme_driver\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:11:9-15:56
+385            android:name="com.lyokone.location.FlutterLocationService"
+385-->[:location] D:\UrgentTaxi\cabme_driver\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-71
+386            android:enabled="true"
+386-->[:location] D:\UrgentTaxi\cabme_driver\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-35
+387            android:exported="false"
+387-->[:location] D:\UrgentTaxi\cabme_driver\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-37
+388            android:foregroundServiceType="location" />
+388-->[:location] D:\UrgentTaxi\cabme_driver\build\location\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-53
+389        <!--
+390        singleTop launchMode is required to capture callback from WeChat SDK
+391        through Activity#onNewIntent
+392        -->
+393        <activity
+393-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:23:9-26:46
+394            android:name="com.stripe.android.payments.wechatpay.WeChatPayAuthActivity"
+394-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:24:13-87
+395            android:exported="true"
+395-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:25:13-36
+396            android:launchMode="singleTop" />
+396-->[com.stripe:stripe-wechatpay:20.16.0] C:\Users\Shubham\.gradle\caches\transforms-3\5c521d8c4f71a19c959b4c143991a19f\transformed\jetified-stripe-wechatpay-20.16.0\AndroidManifest.xml:26:13-43
+397        <activity
+397-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:17:9-24:58
+398            android:name="com.paypal.pyplcheckout.ui.feature.home.activities.PYPLHomeActivity"
+398-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:18:13-95
+399            android:exported="false"
+399-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:19:13-37
+400            android:launchMode="singleTop"
+400-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:20:13-43
+401            android:screenOrientation="portrait"
+401-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:21:13-49
+402            android:taskAffinity="com.pyplcheckout.task"
+402-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:22:13-57
+403            android:theme="@style/PYPLAppTheme"
+403-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:23:13-48
+404            android:windowSoftInputMode="adjustResize" />
+404-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:24:13-55
+405        <activity
+405-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:25:9-41:20
+406            android:name="com.paypal.pyplcheckout.ui.feature.home.activities.PYPLInitiateCheckoutActivity"
+406-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:26:13-107
+407            android:exported="true"
+407-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:27:13-36
+408            android:launchMode="singleTask"
+408-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:28:13-44
+409            android:screenOrientation="portrait"
+409-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:29:13-49
+410            android:theme="@style/PYPLAppFullScreenTheme" >
+410-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:30:13-58
+411            <intent-filter android:autoVerify="true" >
+411-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:31:13-40:29
+411-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:31:28-53
+412                <data
+412-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+413                    android:host="paypalxo"
+414                    android:scheme="com.cabme.driver" />
+414-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+415
+416                <action android:name="android.intent.action.VIEW" />
+416-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+416-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+417
+418                <category android:name="android.intent.category.DEFAULT" />
+418-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+418-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+419                <category android:name="android.intent.category.BROWSABLE" />
+419-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+419-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+420            </intent-filter>
+421        </activity> <!-- This activity is required for listening to Auth redirects (authcore sdk) -->
+422        <activity
+422-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:44:9-60:20
+423            android:name="com.paypal.openid.RedirectUriReceiverActivity"
+423-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:45:13-73
+424            android:excludeFromRecents="true"
+424-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:46:13-46
+425            android:exported="true"
+425-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:47:13-36
+426            android:screenOrientation="portrait"
+426-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:48:13-49
+427            android:theme="@style/PYPLAppTheme" >
+427-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:49:13-48
+428            <intent-filter android:autoVerify="true" >
+428-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:50:13-59:29
+428-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:50:28-53
+429                <action android:name="android.intent.action.VIEW" />
+429-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+429-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+430
+431                <category android:name="android.intent.category.DEFAULT" />
+431-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+431-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+432                <category android:name="android.intent.category.BROWSABLE" />
+432-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+432-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+433
+434                <data
+434-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+435                    android:host="paypalpay"
+436                    android:scheme="com.cabme.driver" />
+436-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+437            </intent-filter>
+438        </activity>
+439        <activity
+439-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:61:9-67:51
+440            android:name="com.paypal.pyplcheckout.ui.feature.threeds.ThreeDS20Activity"
+440-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:62:13-88
+441            android:exported="false"
+441-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:63:13-37
+442            android:launchMode="singleTop"
+442-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:64:13-43
+443            android:screenOrientation="portrait"
+443-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:65:13-49
+444            android:taskAffinity="com.pyplcheckout.threeds"
+444-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:66:13-60
+445            android:theme="@style/PYPLAppTheme" />
+445-->[com.paypal.checkout:android-sdk:1.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\a66b7a57b17b5380cd5cec39e2a956ce\transformed\jetified-android-sdk-1.2.0\AndroidManifest.xml:67:13-48
+446        <activity android:name="com.paypal.authcore.authentication.TokenActivity" />
+446-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:28:9-85
+446-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:28:19-82
+447        <activity
+447-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:29:9-33:75
+448            android:name="com.paypal.openid.AuthorizationManagementActivity"
+448-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:30:13-77
+449            android:exported="false"
+449-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:31:13-37
+450            android:launchMode="singleTask"
+450-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:32:13-44
+451            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+451-->[com.paypal.android:PayPalPartnerAuth:1.8.4] C:\Users\Shubham\.gradle\caches\transforms-3\607dd2c8f95ea10631897194cb7a42a4\transformed\jetified-PayPalPartnerAuth-1.8.4\AndroidManifest.xml:33:13-72
+452        <activity
+452-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:8:9-12:58
+453            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+453-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:9:13-80
+454            android:exported="false"
+454-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:10:13-37
+455            android:theme="@style/StripePaymentSheetDefaultTheme"
+455-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:11:13-66
+456            android:windowSoftInputMode="adjustResize" />
+456-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:12:13-55
+457        <activity
+457-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:13:9-17:58
+458            android:name="com.stripe.android.paymentsheet.PaymentOptionsActivity"
+458-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:14:13-82
+459            android:exported="false"
+459-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:15:13-37
+460            android:theme="@style/StripePaymentSheetDefaultTheme"
+460-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:16:13-66
+461            android:windowSoftInputMode="adjustResize" />
+461-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:17:13-55
+462        <activity
+462-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:18:9-22:58
+463            android:name="com.stripe.android.customersheet.CustomerSheetActivity"
+463-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:19:13-82
+464            android:exported="false"
+464-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:20:13-37
+465            android:theme="@style/StripePaymentSheetDefaultTheme"
+465-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:21:13-66
+466            android:windowSoftInputMode="adjustResize" />
+466-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:22:13-55
+467        <activity
+467-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:23:9-26:69
+468            android:name="com.stripe.android.paymentsheet.addresselement.AddressElementActivity"
+468-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:24:13-97
+469            android:exported="false"
+469-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:25:13-37
+470            android:theme="@style/StripePaymentSheetDefaultTheme" />
+470-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:26:13-66
+471        <activity
+471-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:27:9-30:69
+472            android:name="com.stripe.android.paymentsheet.paymentdatacollection.bacs.BacsMandateConfirmationActivity"
+472-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:28:13-118
+473            android:exported="false"
+473-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:29:13-37
+474            android:theme="@style/StripePaymentSheetDefaultTheme" />
+474-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:30:13-66
+475        <activity
+475-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:31:9-34:69
+476            android:name="com.stripe.android.paymentsheet.paymentdatacollection.polling.PollingActivity"
+476-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:32:13-105
+477            android:exported="false"
+477-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:33:13-37
+478            android:theme="@style/StripePaymentSheetDefaultTheme" />
+478-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:34:13-66
+479        <activity
+479-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:35:9-38:69
+480            android:name="com.stripe.android.paymentsheet.ui.SepaMandateActivity"
+480-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:36:13-82
+481            android:exported="false"
+481-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:37:13-37
+482            android:theme="@style/StripePaymentSheetDefaultTheme" />
+482-->[com.stripe:paymentsheet:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\9f4a732179315e92b704f3ff84e06452\transformed\jetified-paymentsheet-20.37.4\AndroidManifest.xml:38:13-66
+483        <activity
+483-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:8:9-13:61
+484            android:name="com.stripe.android.link.LinkForegroundActivity"
+484-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:9:13-74
+485            android:autoRemoveFromRecents="true"
+485-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:10:13-49
+486            android:configChanges="orientation|keyboard|keyboardHidden|screenLayout|screenSize|smallestScreenSize"
+486-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:11:13-115
+487            android:launchMode="singleTop"
+487-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:12:13-43
+488            android:theme="@style/StripeTransparentTheme" />
+488-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:13:13-58
+489        <activity
+489-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:14:9-31:20
+490            android:name="com.stripe.android.link.LinkRedirectHandlerActivity"
+490-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:15:13-79
+491            android:autoRemoveFromRecents="true"
+491-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:16:13-49
+492            android:exported="true"
+492-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:17:13-36
+493            android:launchMode="singleInstance"
+493-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:18:13-48
+494            android:theme="@style/StripeTransparentTheme" >
+494-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:19:13-58
+495            <intent-filter>
+495-->[com.stripe:link:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\c390716969ca4b239f07d84ff78fd278\transformed\jetified-link-20.37.4\AndroidManifest.xml:20:13-30:29
+496                <action android:name="android.intent.action.VIEW" />
+496-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+496-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+497
+498                <category android:name="android.intent.category.DEFAULT" />
+498-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+498-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+499                <category android:name="android.intent.category.BROWSABLE" />
+499-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+499-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+500
+501                <data
+501-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+502                    android:host="complete"
+503                    android:path="/com.cabme.driver"
+504                    android:scheme="link-popup" />
+504-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+505            </intent-filter>
+506        </activity>
+507        <activity
+507-->[com.stripe:payments-ui-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4bcb25ecd5a986c84a9d3554c6096b79\transformed\jetified-payments-ui-core-20.37.4\AndroidManifest.xml:8:9-11:69
+508            android:name="com.stripe.android.ui.core.cardscan.CardScanActivity"
+508-->[com.stripe:payments-ui-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4bcb25ecd5a986c84a9d3554c6096b79\transformed\jetified-payments-ui-core-20.37.4\AndroidManifest.xml:9:13-80
+509            android:exported="false"
+509-->[com.stripe:payments-ui-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4bcb25ecd5a986c84a9d3554c6096b79\transformed\jetified-payments-ui-core-20.37.4\AndroidManifest.xml:10:13-37
+510            android:theme="@style/StripePaymentSheetDefaultTheme" />
+510-->[com.stripe:payments-ui-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4bcb25ecd5a986c84a9d3554c6096b79\transformed\jetified-payments-ui-core-20.37.4\AndroidManifest.xml:11:13-66
+511        <activity
+511-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:15:9-18:57
+512            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+512-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:16:13-76
+513            android:exported="false"
+513-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:17:13-37
+514            android:theme="@style/StripeDefaultTheme" />
+514-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:18:13-54
+515        <activity
+515-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:19:9-22:57
+516            android:name="com.stripe.android.view.PaymentMethodsActivity"
+516-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:20:13-74
+517            android:exported="false"
+517-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:21:13-37
+518            android:theme="@style/StripeDefaultTheme" />
+518-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:22:13-54
+519        <activity
+519-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:23:9-26:57
+520            android:name="com.stripe.android.view.PaymentFlowActivity"
+520-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:24:13-71
+521            android:exported="false"
+521-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:25:13-37
+522            android:theme="@style/StripeDefaultTheme" />
+522-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:26:13-54
+523        <activity
+523-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:27:9-31:58
+524            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+524-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:28:13-78
+525            android:exported="false"
+525-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:29:13-37
+526            android:theme="@style/StripeDefaultTheme"
+526-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:30:13-54
+527            android:windowSoftInputMode="adjustResize" />
+527-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:31:13-55
+528        <activity
+528-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:32:9-35:61
+529            android:name="com.stripe.android.view.PaymentRelayActivity"
+529-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:33:13-72
+530            android:exported="false"
+530-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:34:13-37
+531            android:theme="@style/StripeTransparentTheme" />
+531-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:35:13-58
+532        <!--
+533        Set android:launchMode="singleTop" so that the StripeBrowserLauncherActivity instance that
+534        launched the browser Activity will also handle the return URL deep link.
+535        -->
+536        <activity
+536-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:41:9-45:61
+537            android:name="com.stripe.android.payments.StripeBrowserLauncherActivity"
+537-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:42:13-85
+538            android:exported="false"
+538-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:43:13-37
+539            android:launchMode="singleTask"
+539-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:44:13-44
+540            android:theme="@style/StripeTransparentTheme" />
+540-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:45:13-58
+541        <activity
+541-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:46:9-63:20
+542            android:name="com.stripe.android.payments.StripeBrowserProxyReturnActivity"
+542-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:47:13-88
+543            android:exported="true"
+543-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:48:13-36
+544            android:launchMode="singleTask"
+544-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:49:13-44
+545            android:theme="@style/StripeTransparentTheme" >
+545-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:50:13-58
+546            <intent-filter>
+546-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:51:13-62:29
+547                <action android:name="android.intent.action.VIEW" />
+547-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+547-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+548
+549                <category android:name="android.intent.category.DEFAULT" />
+549-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+549-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+550                <category android:name="android.intent.category.BROWSABLE" />
+550-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+550-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+551
+552                <!-- Must match `DefaultReturnUrl#value`. -->
+553                <data
+553-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+554                    android:host="payment_return_url"
+555                    android:path="/com.cabme.driver"
+556                    android:scheme="stripesdk" />
+556-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+557            </intent-filter>
+558        </activity>
+559        <activity
+559-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:64:9-67:57
+560            android:name="com.stripe.android.payments.core.authentication.threeds2.Stripe3ds2TransactionActivity"
+560-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:65:13-114
+561            android:exported="false"
+561-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:66:13-37
+562            android:theme="@style/StripeDefaultTheme" />
+562-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:67:13-54
+563        <activity
+563-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:68:9-71:66
+564            android:name="com.stripe.android.googlepaylauncher.GooglePayLauncherActivity"
+564-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:69:13-90
+565            android:exported="false"
+565-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:70:13-37
+566            android:theme="@style/StripeGooglePayDefaultTheme" />
+566-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:71:13-63
+567        <activity
+567-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:72:9-75:66
+568            android:name="com.stripe.android.googlepaylauncher.GooglePayPaymentMethodLauncherActivity"
+568-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:73:13-103
+569            android:exported="false"
+569-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:74:13-37
+570            android:theme="@style/StripeGooglePayDefaultTheme" />
+570-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:75:13-63
+571        <activity
+571-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:76:9-79:68
+572            android:name="com.stripe.android.payments.paymentlauncher.PaymentLauncherConfirmationActivity"
+572-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:77:13-107
+573            android:exported="false"
+573-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:78:13-37
+574            android:theme="@style/StripePayLauncherDefaultTheme" />
+574-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:79:13-65
+575        <activity
+575-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:80:9-83:61
+576            android:name="com.stripe.android.payments.bankaccount.ui.CollectBankAccountActivity"
+576-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:81:13-97
+577            android:exported="false"
+577-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:82:13-37
+578            android:theme="@style/StripeTransparentTheme" />
+578-->[com.stripe:payments-core:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\4747b353e27ba63480187e3f7010cb1f\transformed\jetified-payments-core-20.37.4\AndroidManifest.xml:83:13-58
+579        <activity
+579-->[com.stripe:stripe-3ds2-android:6.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\4944d2568d9c77c0615e61e337cd4754\transformed\jetified-stripe-3ds2-android-6.1.8\AndroidManifest.xml:8:9-11:54
+580            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+580-->[com.stripe:stripe-3ds2-android:6.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\4944d2568d9c77c0615e61e337cd4754\transformed\jetified-stripe-3ds2-android-6.1.8\AndroidManifest.xml:9:13-81
+581            android:exported="false"
+581-->[com.stripe:stripe-3ds2-android:6.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\4944d2568d9c77c0615e61e337cd4754\transformed\jetified-stripe-3ds2-android-6.1.8\AndroidManifest.xml:10:13-37
+582            android:theme="@style/Stripe3DS2Theme" />
+582-->[com.stripe:stripe-3ds2-android:6.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\4944d2568d9c77c0615e61e337cd4754\transformed\jetified-stripe-3ds2-android-6.1.8\AndroidManifest.xml:11:13-51
+583        <activity
+583-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:21:9-65:20
+584            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetRedirectActivity"
+584-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:22:13-109
+585            android:exported="true"
+585-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:23:13-36
+586            android:launchMode="singleTask" >
+586-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:24:13-44
+587            <intent-filter>
+587-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:25:13-64:29
+588                <action android:name="android.intent.action.VIEW" />
+588-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+588-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+589
+590                <category android:name="android.intent.category.DEFAULT" />
+590-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+590-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+591                <category android:name="android.intent.category.BROWSABLE" />
+591-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+591-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+592
+593                <!-- Returning from app2app: return_url is triggered to reopen web AuthFlow and poll accounts. -->
+594                <data
+594-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+595                    android:host="link-accounts"
+596                    android:pathPrefix="/com.cabme.driver/authentication_return"
+597                    android:scheme="stripe-auth" />
+597-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+598
+599                <!-- Returning from app2app: return_url is triggered to reopen native AuthFlow and poll accounts. -->
+600                <data
+600-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+601                    android:host="link-native-accounts"
+602                    android:pathPrefix="/com.cabme.driver/authentication_return"
+603                    android:scheme="stripe-auth" />
+603-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+604
+605                <!-- End of web AuthFlow success and cancel URIs that begin with "stripe-auth://link-accounts/{app-id}/...” -->
+606                <data
+606-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+607                    android:host="link-accounts"
+608                    android:path="/com.cabme.driver/success"
+609                    android:scheme="stripe-auth" />
+609-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+610                <data
+610-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+611                    android:host="link-accounts"
+612                    android:path="/com.cabme.driver/cancel"
+613                    android:scheme="stripe-auth" />
+613-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+614
+615                <!-- Opening app2app: Web flow triggers stripe-auth://native-redirect/{app-id}/http://web-that-redirects-to-native -->
+616                <data
+616-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+617                    android:host="native-redirect"
+618                    android:pathPrefix="/com.cabme.driver"
+619                    android:scheme="stripe-auth" />
+619-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+620
+621                <!-- Accepts success/cancel/fail URIs that begin with "stripe://auth-redirect” -->
+622                <data
+622-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+623                    android:host="auth-redirect"
+624                    android:pathPrefix="/com.cabme.driver"
+625                    android:scheme="stripe" />
+625-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+626            </intent-filter>
+627        </activity>
+628        <activity
+628-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:66:9-69:57
+629            android:name="com.stripe.android.financialconnections.FinancialConnectionsSheetActivity"
+629-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:67:13-101
+630            android:exported="false"
+630-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:68:13-37
+631            android:theme="@style/StripeDefaultTheme" />
+631-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:69:13-54
+632        <activity
+632-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:70:9-74:58
+633            android:name="com.stripe.android.financialconnections.ui.FinancialConnectionsSheetNativeActivity"
+633-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:71:13-110
+634            android:exported="false"
+634-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:72:13-37
+635            android:theme="@style/StripeDefaultTheme"
+635-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:73:13-54
+636            android:windowSoftInputMode="adjustResize" />
+636-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:74:13-55
+637
+638        <provider
+638-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:76:9-80:43
+639            android:name="com.stripe.android.financialconnections.appinitializer.FinancialConnectionsInitializer"
+639-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:77:13-114
+640            android:authorities="com.cabme.driver.financialconnections-init"
+640-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:78:13-77
+641            android:exported="false"
+641-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:79:13-37
+642            android:multiprocess="true" />
+642-->[com.stripe:financial-connections:20.37.4] C:\Users\Shubham\.gradle\caches\transforms-3\d0526fe5bfce1f3ecbec99c5fda2b900\transformed\jetified-financial-connections-20.37.4\AndroidManifest.xml:80:13-40
+643
+644        <receiver
+644-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:29:9-40:20
+645            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+645-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:30:13-78
+646            android:exported="true"
+646-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:31:13-36
+647            android:permission="com.google.android.c2dm.permission.SEND" >
+647-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:32:13-73
+648            <intent-filter>
+648-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-32:29
+649                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+649-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:17-81
+649-->[:firebase_messaging] D:\UrgentTaxi\cabme_driver\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:25-78
+650            </intent-filter>
+651
+652            <meta-data
+652-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:37:13-39:40
+653                android:name="com.google.android.gms.cloudmessaging.FINISHED_AFTER_HANDLED"
+653-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:38:17-92
+654                android:value="true" />
+654-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:39:17-37
+655        </receiver>
+656        <!--
+657             FirebaseMessagingService performs security checks at runtime,
+658             but set to not exported to explicitly avoid allowing another app to call it.
+659        -->
+660        <service
+660-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:46:9-53:19
+661            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+661-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:47:13-82
+662            android:directBootAware="true"
+662-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:48:13-43
+663            android:exported="false" >
+663-->[com.google.firebase:firebase-messaging:23.4.1] C:\Users\Shubham\.gradle\caches\transforms-3\a98bbee2af4e42d0b34950c3e2639ba8\transformed\jetified-firebase-messaging-23.4.1\AndroidManifest.xml:49:13-37
+664            <intent-filter android:priority="-500" >
+664-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:64:13-66:29
+665                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+665-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:17-78
+665-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:65:25-75
+666            </intent-filter>
+667        </service>
+668
+669        <activity
+669-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:29:9-46:20
+670            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+670-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:30:13-80
+671            android:excludeFromRecents="true"
+671-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:31:13-46
+672            android:exported="true"
+672-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:32:13-36
+673            android:launchMode="singleTask"
+673-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:33:13-44
+674            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+674-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:34:13-72
+675            <intent-filter>
+675-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:35:13-45:29
+676                <action android:name="android.intent.action.VIEW" />
+676-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+676-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+677
+678                <category android:name="android.intent.category.DEFAULT" />
+678-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+678-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+679                <category android:name="android.intent.category.BROWSABLE" />
+679-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+679-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+680
+681                <data
+681-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+682                    android:host="firebase.auth"
+683                    android:path="/"
+684                    android:scheme="genericidp" />
+684-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+685            </intent-filter>
+686        </activity>
+687        <activity
+687-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:47:9-64:20
+688            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+688-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:48:13-79
+689            android:excludeFromRecents="true"
+689-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:49:13-46
+690            android:exported="true"
+690-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:50:13-36
+691            android:launchMode="singleTask"
+691-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:51:13-44
+692            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+692-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:52:13-72
+693            <intent-filter>
+693-->[com.google.firebase:firebase-auth:22.3.1] C:\Users\Shubham\.gradle\caches\transforms-3\5f2eb2693a5564090ba87a7154640a36\transformed\jetified-firebase-auth-22.3.1\AndroidManifest.xml:53:13-63:29
+694                <action android:name="android.intent.action.VIEW" />
+694-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:13-65
+694-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:16:21-62
+695
+696                <category android:name="android.intent.category.DEFAULT" />
+696-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:17-76
+696-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:61:27-73
+697                <category android:name="android.intent.category.BROWSABLE" />
+697-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:13-74
+697-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:17:23-71
+698
+699                <data
+699-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:13-44
+700                    android:host="firebase.auth"
+701                    android:path="/"
+702                    android:scheme="recaptcha" />
+702-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:18:19-41
+703            </intent-filter>
+704        </activity>
+705
+706        <property
+706-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:30:9-32:61
+707            android:name="android.adservices.AD_SERVICES_CONFIG"
+707-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:31:13-65
+708            android:resource="@xml/ga_ad_services_config" />
+708-->[com.google.android.gms:play-services-measurement-api:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\0983af37fae161cd853881bc4e7a85d8\transformed\jetified-play-services-measurement-api-21.6.1\AndroidManifest.xml:32:13-58
+709
+710        <provider
+710-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:23:9-28:39
+711            android:name="com.google.firebase.provider.FirebaseInitProvider"
+711-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:24:13-77
+712            android:authorities="com.cabme.driver.firebaseinitprovider"
+712-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:25:13-72
+713            android:directBootAware="true"
+713-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:26:13-43
+714            android:exported="false"
+714-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:27:13-37
+715            android:initOrder="100" />
+715-->[com.google.firebase:firebase-common:20.4.3] C:\Users\Shubham\.gradle\caches\transforms-3\669342fc090a14e7a0b735f3f6e9ac02\transformed\jetified-firebase-common-20.4.3\AndroidManifest.xml:28:13-36
+716
+717        <activity
+717-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:23:9-26:66
+718            android:name="com.paytm.pgsdk.PaytmPGActivity"
+718-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:24:13-59
+719            android:screenOrientation="portrait"
+719-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:25:13-49
+720            android:theme="@style/Theme.AppCompat.NoActionBar" />
+720-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:26:13-63
+721        <activity
+721-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:27:9-29:63
+722            android:name="com.paytm.pgsdk.AioMatchUserActivity"
+722-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:28:13-64
+723            android:theme="@style/TransparentActivityTheme" />
+723-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:29:13-60
+724
+725        <service
+725-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:31:9-33:40
+726            android:name="com.paytm.pgsdk.IntentServicePostNotification"
+726-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:32:13-73
+727            android:exported="false" />
+727-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:33:13-37
+728        <service
+728-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:34:9-36:40
+729            android:name="com.paytm.pgsdk.IntentServicePreNotification"
+729-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:35:13-72
+730            android:exported="false" />
+730-->[com.paytm.appinvokesdk:appinvokesdk:1.6.15] C:\Users\Shubham\.gradle\caches\transforms-3\2ed819b30559ba0f30b0712f9c38a231\transformed\jetified-appinvokesdk-1.6.15\AndroidManifest.xml:36:13-37
+731        <service
+731-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:13:9-16:72
+732            android:name="easypay.appinvoke.utils.EasyPayConfigDownloader"
+732-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:14:13-75
+733            android:exported="false"
+733-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:15:13-37
+734            android:permission="android.permission.BIND_JOB_SERVICE" />
+734-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:16:13-69
+735        <service
+735-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:17:9-21:72
+736            android:name="easypay.appinvoke.utils.AnalyticsService"
+736-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:18:13-68
+737            android:enabled="true"
+737-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:19:13-35
+738            android:exported="false"
+738-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:20:13-37
+739            android:permission="android.permission.BIND_JOB_SERVICE" />
+739-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:21:13-69
+740
+741        <activity android:name="easypay.appinvoke.AnalyticsManagerInfoDisplayActivity" />
+741-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:23:9-90
+741-->[com.paytm.easypay:easypay-appinvoke:1.7.5] C:\Users\Shubham\.gradle\caches\transforms-3\bd08eb822618dc64537cb1f0d882caf1\transformed\jetified-easypay-appinvoke-1.7.5\AndroidManifest.xml:23:19-87
+742
+743        <provider
+743-->[com.squareup.picasso:picasso:2.8] C:\Users\Shubham\.gradle\caches\transforms-3\622ecfc6973efa3b62b4c8d842e85843\transformed\jetified-picasso-2.8\AndroidManifest.xml:8:9-11:40
+744            android:name="com.squareup.picasso.PicassoProvider"
+744-->[com.squareup.picasso:picasso:2.8] C:\Users\Shubham\.gradle\caches\transforms-3\622ecfc6973efa3b62b4c8d842e85843\transformed\jetified-picasso-2.8\AndroidManifest.xml:9:13-64
+745            android:authorities="com.cabme.driver.com.squareup.picasso"
+745-->[com.squareup.picasso:picasso:2.8] C:\Users\Shubham\.gradle\caches\transforms-3\622ecfc6973efa3b62b4c8d842e85843\transformed\jetified-picasso-2.8\AndroidManifest.xml:10:13-72
+746            android:exported="false" />
+746-->[com.squareup.picasso:picasso:2.8] C:\Users\Shubham\.gradle\caches\transforms-3\622ecfc6973efa3b62b4c8d842e85843\transformed\jetified-picasso-2.8\AndroidManifest.xml:11:13-37
+747
+748        <receiver
+748-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:29:9-33:20
+749            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+749-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:30:13-85
+750            android:enabled="true"
+750-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:31:13-35
+751            android:exported="false" >
+751-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:32:13-37
+752        </receiver>
+753
+754        <service
+754-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:35:9-38:40
+755            android:name="com.google.android.gms.measurement.AppMeasurementService"
+755-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:36:13-84
+756            android:enabled="true"
+756-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:37:13-35
+757            android:exported="false" />
+757-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:38:13-37
+758        <service
+758-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:39:9-43:72
+759            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+759-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:40:13-87
+760            android:enabled="true"
+760-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:41:13-35
+761            android:exported="false"
+761-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:42:13-37
+762            android:permission="android.permission.BIND_JOB_SERVICE" />
+762-->[com.google.android.gms:play-services-measurement:21.6.1] C:\Users\Shubham\.gradle\caches\transforms-3\5ffbbc246329af3afa34795e7d066d4c\transformed\jetified-play-services-measurement-21.6.1\AndroidManifest.xml:43:13-69
+763
+764        <receiver
+764-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:42:9-49:20
+765            android:name="com.razorpay.RzpTokenReceiver"
+765-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:43:13-57
+766            android:exported="true" >
+766-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:44:13-36
+767            <intent-filter>
+767-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:46:13-48:29
+768                <action android:name="rzp.device_token.share" />
+768-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:37:13-61
+768-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:37:21-58
+769            </intent-filter>
+770        </receiver>
+771
+772        <activity
+772-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:51:9-59:20
+773            android:name="com.razorpay.CheckoutActivity"
+773-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:52:13-57
+774            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+774-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:53:13-83
+775            android:exported="false"
+775-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:54:13-37
+776            android:theme="@style/CheckoutTheme" >
+776-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:55:13-49
+777            <intent-filter>
+777-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:56:13-58:29
+778                <action android:name="android.intent.action.MAIN" />
+778-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:17-69
+778-->D:\UrgentTaxi\cabme_driver\android\app\src\main\AndroidManifest.xml:55:25-66
+779            </intent-filter>
+780        </activity>
+781
+782        <meta-data
+782-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:61:9-63:58
+783            android:name="com.razorpay.plugin.googlepay_all"
+783-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:62:13-61
+784            android:value="com.razorpay.RzpGpayMerged" />
+784-->[com.razorpay:checkout:1.6.38] C:\Users\Shubham\.gradle\caches\transforms-3\3ef123392597f755080cc3b794747c45\transformed\jetified-checkout-1.6.38\AndroidManifest.xml:63:13-55
+785
+786        <activity
+786-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:23:9-27:75
+787            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+787-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:24:13-93
+788            android:excludeFromRecents="true"
+788-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:25:13-46
+789            android:exported="false"
+789-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:26:13-37
+790            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+790-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:27:13-72
+791        <!--
+792            Service handling Google Sign-In user revocation. For apps that do not integrate with
+793            Google Sign-In, this service will never be started.
+794        -->
+795        <service
+795-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:33:9-37:51
+796            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+796-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:34:13-89
+797            android:exported="true"
+797-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:35:13-36
+798            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+798-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:36:13-107
+799            android:visibleToInstantApps="true" /> <!-- Needs to be explicitly declared on P+ -->
+799-->[com.google.android.gms:play-services-auth:20.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\4225535ffb765dd6ebf48a44141a5831\transformed\jetified-play-services-auth-20.4.0\AndroidManifest.xml:37:13-48
+800        <uses-library
+800-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:39:9-41:40
+801            android:name="org.apache.http.legacy"
+801-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:40:13-50
+802            android:required="false" />
+802-->[com.google.android.gms:play-services-maps:18.2.0] C:\Users\Shubham\.gradle\caches\transforms-3\5d35cad7a2f0b471283362ffd226424f\transformed\jetified-play-services-maps-18.2.0\AndroidManifest.xml:41:13-37
+803
+804        <activity
+804-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\19cf4e8cde3d91e9a8ca08bd5b41c8d2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+805            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+805-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\19cf4e8cde3d91e9a8ca08bd5b41c8d2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+806            android:exported="false"
+806-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\19cf4e8cde3d91e9a8ca08bd5b41c8d2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+807            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+807-->[com.google.android.gms:play-services-base:18.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\19cf4e8cde3d91e9a8ca08bd5b41c8d2\transformed\jetified-play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+808
+809        <uses-library
+809-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+810            android:name="androidx.window.extensions"
+810-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+811            android:required="false" />
+811-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+812        <uses-library
+812-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+813            android:name="androidx.window.sidecar"
+813-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+814            android:required="false" />
+814-->[androidx.window:window:1.0.0] C:\Users\Shubham\.gradle\caches\transforms-3\4c7c8277e0136dba0ec838a90cf407be\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+815        <uses-library
+815-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Shubham\.gradle\caches\transforms-3\e677084c04065138f5f51a63038d8097\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:23:9-25:40
+816            android:name="android.ext.adservices"
+816-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Shubham\.gradle\caches\transforms-3\e677084c04065138f5f51a63038d8097\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:24:13-50
+817            android:required="false" />
+817-->[androidx.privacysandbox.ads:ads-adservices:1.0.0-beta05] C:\Users\Shubham\.gradle\caches\transforms-3\e677084c04065138f5f51a63038d8097\transformed\jetified-ads-adservices-1.0.0-beta05\AndroidManifest.xml:25:13-37
+818
+819        <provider
+819-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:24:9-32:20
+820            android:name="androidx.startup.InitializationProvider"
+820-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:25:13-67
+821            android:authorities="com.cabme.driver.androidx-startup"
+821-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:26:13-68
+822            android:exported="false" >
+822-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:27:13-37
+823            <meta-data
+823-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:29:13-31:52
+824                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+824-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:30:17-75
+825                android:value="androidx.startup" />
+825-->[androidx.emoji2:emoji2:1.4.0] C:\Users\Shubham\.gradle\caches\transforms-3\d0d3549d0bb585f3858538b094ed6943\transformed\jetified-emoji2-1.4.0\AndroidManifest.xml:31:17-49
+826            <meta-data
+826-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Shubham\.gradle\caches\transforms-3\8ee1d89f2f9d4648e8ab301f83ba5b6a\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:29:13-31:52
+827                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+827-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Shubham\.gradle\caches\transforms-3\8ee1d89f2f9d4648e8ab301f83ba5b6a\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:30:17-78
+828                android:value="androidx.startup" />
+828-->[androidx.lifecycle:lifecycle-process:2.7.0] C:\Users\Shubham\.gradle\caches\transforms-3\8ee1d89f2f9d4648e8ab301f83ba5b6a\transformed\jetified-lifecycle-process-2.7.0\AndroidManifest.xml:31:17-49
+829            <meta-data
+829-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+830                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+830-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+831                android:value="androidx.startup" />
+831-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+832        </provider>
+833
+834        <meta-data
+834-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\3ec05ec41aeec59235d93a35d2bb628a\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:21:9-23:69
+835            android:name="com.google.android.gms.version"
+835-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\3ec05ec41aeec59235d93a35d2bb628a\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:22:13-58
+836            android:value="@integer/google_play_services_version" />
+836-->[com.google.android.gms:play-services-basement:18.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\3ec05ec41aeec59235d93a35d2bb628a\transformed\jetified-play-services-basement-18.3.0\AndroidManifest.xml:23:13-66
+837
+838        <receiver
+838-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+839            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+839-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+840            android:directBootAware="false"
+840-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+841            android:enabled="true"
+841-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+842            android:exported="true"
+842-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+843            android:permission="android.permission.DUMP" >
+843-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+844            <intent-filter>
+844-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+845                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+845-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+845-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+846            </intent-filter>
+847            <intent-filter>
+847-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+848                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+848-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+848-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+849            </intent-filter>
+850            <intent-filter>
+850-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+851                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+851-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+851-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+852            </intent-filter>
+853            <intent-filter>
+853-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+854                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+854-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+854-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\Shubham\.gradle\caches\transforms-3\c5637ad548bd2a6c608eff649329bd49\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+855            </intent-filter>
+856        </receiver>
+857
+858        <service
+858-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+859            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+859-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+860            android:exported="false" >
+860-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+861            <meta-data
+861-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+862                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+862-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+863                android:value="cct" />
+863-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\db897281042a4d541647292142117f02\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+864        </service>
+865        <service
+865-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+866            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+866-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+867            android:exported="false"
+867-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+868            android:permission="android.permission.BIND_JOB_SERVICE" >
+868-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+869        </service>
+870
+871        <receiver
+871-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+872            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+872-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+873            android:exported="false" />
+873-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Shubham\.gradle\caches\transforms-3\27378f8f7bffc6f6cc03272d8d3556d7\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+874
+875        <provider
+875-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:17:9-21:39
+876            android:name="com.cardinalcommerce.a.setShadowLayer"
+876-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:18:13-65
+877            android:authorities="com.cabme.driver.CCInitProvider"
+877-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:19:13-66
+878            android:enabled="true"
+878-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:20:13-35
+879            android:exported="true" />
+879-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:21:13-36
+880
+881        <activity
+881-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:23:9-26:65
+882            android:name="com.cardinalcommerce.a.setTextLocale"
+882-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:24:13-64
+883            android:exported="false"
+883-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:25:13-37
+884            android:theme="@style/CardinalSDKTheme.ActionBar" />
+884-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:26:13-62
+885        <activity
+885-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:27:9-31:76
+886            android:name="com.cardinalcommerce.a.setTextLocales"
+886-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:28:13-65
+887            android:exported="false"
+887-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:29:13-37
+888            android:theme="@style/CardinalSDKTheme.ActionBar"
+888-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:30:13-62
+889            android:windowSoftInputMode="stateAlwaysHidden|adjustResize" />
+889-->[org.jfrog.cardinalcommerce.gradle:cardinalmobilesdk:2.2.7-2] C:\Users\Shubham\.gradle\caches\transforms-3\b13ff97fd9ee89402ce850c86f9ef0b8\transformed\jetified-cardinalmobilesdk-2.2.7-2\AndroidManifest.xml:31:13-73
+890
+891        <meta-data
+891-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\1ac6b91a7db2f6876159224faadd7493\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:10:9-12:33
+892            android:name="aia-compat-api-min-version"
+892-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\1ac6b91a7db2f6876159224faadd7493\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:11:13-54
+893            android:value="1" />
+893-->[com.google.android.instantapps:instantapps:1.1.0] C:\Users\Shubham\.gradle\caches\transforms-3\1ac6b91a7db2f6876159224faadd7493\transformed\jetified-instantapps-1.1.0\AndroidManifest.xml:12:13-30
+894    </application>
+895
+896</manifest>

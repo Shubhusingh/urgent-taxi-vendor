@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331219822949",
+    "project_id": "cabme-955b5",
+    "storage_bucket": "cabme-955b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331219822949:android:6bb3cc7c932329d62a598c",
+        "android_client_info": {
+          "package_name": "com.cabme.driver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrYz7_zXHrikBxALCCBpKAT4MCBJ3rleU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

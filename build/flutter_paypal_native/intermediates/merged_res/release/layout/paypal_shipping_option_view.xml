@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/horizontal_guide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_begin="@dimen/paypal_checkout_home_item_guide" />
+
+        <View
+            android:id="@+id/line_break"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/paypal_checkout_divider_height"
+            android:background="@color/paypal_checkout_gray_color_300"
+            android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginLeft="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginEnd="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginRight="@dimen/paypal_checkout_margin_16x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line_break" />
+
+        <ImageView
+            android:id="@+id/shipping_info_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginBottom="@dimen/paypal_checkout_margin_16x"
+            android:src="@drawable/paypal_checkout_ic_shipping_option"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.7" />
+
+        <TextView
+            android:id="@+id/shipping_method_tv"
+            style="@style/PYPLTextViewBody2Style"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintLeft_toRightOf="@id/horizontal_guide"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintStart_toEndOf="@id/horizontal_guide"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="FREE - Standard Shipping" />
+
+        <TextView
+            android:id="@+id/shipping_method_loading_tv"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+            android:ellipsize="end"
+            android:gravity="start|center_vertical"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintLeft_toRightOf="@id/horizontal_guide"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintStart_toEndOf="@id/horizontal_guide"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Loading shipping method..." />
+
+        <TextView
+            android:id="@+id/invalid_shipping_method_tv"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="@dimen/paypal_checkout_match_constraint"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/shipping_method_tv"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_5x"
+            android:drawableStart="@drawable/paypal_checkout_ic_error"
+            android:drawableLeft="@drawable/paypal_checkout_ic_error"
+            android:drawablePadding="@dimen/paypal_checkout_padding_8x"
+            android:gravity="start|center_vertical"
+            android:paddingBottom="@dimen/paypal_checkout_padding_8x"
+            android:text="@string/paypal_checkout_this_method_is_not_available_choose_different_one"
+            android:textAlignment="gravity"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintLeft_toRightOf="@id/horizontal_guide"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintStart_toEndOf="@id/horizontal_guide"
+            app:layout_constraintTop_toBottomOf="@id/shipping_method_tv"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</merge>

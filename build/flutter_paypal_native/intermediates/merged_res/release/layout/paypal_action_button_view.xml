@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/paypal_gold"
+    tools:gravity="center"
+    tools:layout_height="wrap_content"
+    tools:layout_width="match_parent"
+    tools:minHeight="48dp"
+    tools:orientation="horizontal"
+    tools:parentTag="LinearLayout">
+
+    <TextView
+        android:id="@+id/buttonText"
+        style="@style/PYPLTextViewButtonStyle"
+        android:fontFamily="sans-serif-medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Checkout"
+        tools:textColor="@color/paypal_checkout_spb_on_light_surface"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleVerticalGuideline"
+        android:layout_width="@dimen/paypal_checkout_match_constraint"
+        android:layout_height="@dimen/paypal_checkout_match_constraint"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleHorizontalGuideline"
+        android:layout_width="@dimen/paypal_checkout_match_constraint"
+        android:layout_height="@dimen/paypal_checkout_match_constraint"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+</merge>

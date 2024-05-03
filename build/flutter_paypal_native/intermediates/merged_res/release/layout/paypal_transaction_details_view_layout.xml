@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="@dimen/paypal_checkout_margin_8x"
+    android:layout_marginEnd="@dimen/paypal_checkout_margin_8x"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_padding_16x"
+        android:text="@string/paypal_checkout_ec_token"
+        android:textSize="@dimen/text_size_16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ec_token_text"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="EC123456" />
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:text="@string/paypal_checkout_button_session_id"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/button_session_text"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="123456" />
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:text="@string/paypal_checkout_device_id"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/deviceIdTextView"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="1234556" />
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:text="@string/paypal_checkout_merchant_id"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/paypal_merchant_id"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="1234556" />
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:text="@string/paypal_checkout_buyer_id"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/paypal_buyer_id"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="1234556" />
+
+    <TextView
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:text="@string/paypal_checkout_sdk_version"
+        android:textSize="@dimen/text_size_16" />
+
+    <TextView
+        android:id="@+id/paypal_sdk_version"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:textIsSelectable="true"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold"
+        tools:text="v0.8.13" />
+
+    <RelativeLayout
+        android:id="@+id/pay_now_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_24x"
+        android:backgroundTint="@color/paypal_checkout_white_color"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <com.paypal.pyplcheckout.ui.feature.home.customviews.PayPalActionButton
+            android:id="@+id/pay_now_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/paypal_checkout_pay_now" />
+
+        <ProgressBar
+            android:id="@+id/pay_now_progress_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+
+    <!-- Add other info below as text views -->
+</androidx.appcompat.widget.LinearLayoutCompat>

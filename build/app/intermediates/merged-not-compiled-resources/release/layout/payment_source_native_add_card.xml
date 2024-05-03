@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
+    android:layout_width="@dimen/paypal_checkout_payment_source_wrapper_width"
+    android:layout_height="wrap_content"
+    android:clickable="false">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView_source_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardElevation="0dp"
+        android:clipChildren="true"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="@dimen/paypal_checkout_paypal_payment_source_card_margin"
+        app:layout_constraintDimensionRatio="H,19:12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/add_new_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/paypal_checkout_ic_path"
+            android:contentDescription="@string/paypal_checkout_add_card"/>
+
+        <ImageView
+            android:id="@+id/payment_source_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            tools:src="@drawable/paypal_checkout_ic_amex"
+            tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView_payment_source_border"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:importantForAccessibility="@android:integer/config_longAnimTime"
+        android:contentDescription="@string/paypal_checkout_add_debit_or_credit"
+        android:background="@drawable/paypal_checkout_native_add_card_rectangle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

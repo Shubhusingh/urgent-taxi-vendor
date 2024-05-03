@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/menu/example_menu.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/menu/example_menu.xml"
+    },
+    {
+        "merged": "com.piccmaq.flutter_paypal_native-merged_res-53:/menu/example_menu2.xml",
+        "source": "com.piccmaq.flutter_paypal_native-core-1.7.0-29:/menu/example_menu2.xml"
+    }
+]

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/footer_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/paypal_checkout_white_color"
+        android:orientation="vertical"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_anchorGravity="bottom" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content_container"
+        android:layout_above="@+id/footer_container"
+        tools:showIn="@layout/pypl_home_fragment">
+
+        <LinearLayout
+            android:id="@+id/header_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation"
+            android:orientation="vertical" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_32x"
+            android:background="@android:color/transparent"
+            android:clipToPadding="false"
+            android:layout_gravity="bottom"
+            android:descendantFocusability="afterDescendants"
+            android:fadeScrollbars="true"
+            android:fadingEdgeLength="@dimen/paypal_checkout_paysheet_fading_length"
+            android:requiresFadingEdge="vertical"
+            android:scrollbars="vertical">
+
+            <LinearLayout
+                android:id="@+id/body_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/paypal_checkout_rounded_dialog"
+                android:backgroundTint="@color/paypal_checkout_white_color"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                android:layout_gravity="bottom" />
+
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</merge>

@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-mergeReleaseResources-51:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\a66b7a57b17b5380cd5cec39e2a956ce\\transformed\\jetified-android-sdk-1.2.0\\res\\values-v27\\values-v27.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,679",
+                        "endLines": "11,22",
+                        "endColumns": "12,12",
+                        "endOffsets": "674,1373"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-merged_res-53:/values-v27/values-v27.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\a66b7a57b17b5380cd5cec39e2a956ce\\transformed\\jetified-android-sdk-1.2.0\\res\\values-v27\\values-v27.xml",
+                    "from": {
+                        "startLines": "2,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,679",
+                        "endLines": "11,22",
+                        "endColumns": "12,12",
+                        "endOffsets": "674,1373"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,68 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-mergeReleaseResources-51:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\35b183e30bbf314f7a553636ac480e52\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\a66b7a57b17b5380cd5cec39e2a956ce\\transformed\\jetified-android-sdk-1.2.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "52",
+                        "endOffsets": "103"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "332",
+                        "endColumns": "52",
+                        "endOffsets": "380"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-merged_res-53:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\35b183e30bbf314f7a553636ac480e52\\transformed\\material-1.5.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\a66b7a57b17b5380cd5cec39e2a956ce\\transformed\\jetified-android-sdk-1.2.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "52",
+                        "endOffsets": "103"
+                    },
+                    "to": {
+                        "startLines": "4",
+                        "startColumns": "4",
+                        "startOffsets": "332",
+                        "endColumns": "52",
+                        "endOffsets": "380"
+                    }
+                }
+            ]
+        }
+    ]
+}

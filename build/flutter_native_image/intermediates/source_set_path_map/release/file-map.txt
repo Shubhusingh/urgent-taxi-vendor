@@ -1,0 +1,12 @@
+com.example.flutternativeimage.flutter_native_image-jetified-annotation-experimental-1.1.0-0 C:\Users\Shubham\.gradle\caches\transforms-3\27e971d9d25ce0c04c4ba317ec1c9d40\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.flutternativeimage.flutter_native_image-jetified-window-1.0.0-beta04-1 C:\Users\Shubham\.gradle\caches\transforms-3\8d901f4add6c80df75568b5a0845e431\transformed\jetified-window-1.0.0-beta04\res
+com.example.flutternativeimage.flutter_native_image-core-1.6.0-2 C:\Users\Shubham\.gradle\caches\transforms-3\9cfd29e3b5b88686f990ee84187768d2\transformed\core-1.6.0\res
+com.example.flutternativeimage.flutter_native_image-jetified-window-java-1.0.0-beta04-3 C:\Users\Shubham\.gradle\caches\transforms-3\f65fe4f86386896c717c257f7b9c825a\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.flutternativeimage.flutter_native_image-main-4 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_image-0.0.6+1\android\src\main\res
+com.example.flutternativeimage.flutter_native_image-release-5 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\flutter_native_image-0.0.6+1\android\src\release\res
+com.example.flutternativeimage.flutter_native_image-pngs-6 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\generated\res\pngs\release
+com.example.flutternativeimage.flutter_native_image-resValues-7 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\generated\res\resValues\release
+com.example.flutternativeimage.flutter_native_image-rs-8 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\generated\res\rs\release
+com.example.flutternativeimage.flutter_native_image-mergeReleaseResources-9 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.flutternativeimage.flutter_native_image-mergeReleaseResources-10 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.flutternativeimage.flutter_native_image-merged_res-11 D:\UrgentTaxi\cabme_driver\build\flutter_native_image\intermediates\merged_res\release

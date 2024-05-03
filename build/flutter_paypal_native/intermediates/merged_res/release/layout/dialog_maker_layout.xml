@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/paypal_checkout_dialog_maker_shape"
+    android:elevation="@dimen/paypal_checkout_dialog_maker_elevation"
+    android:paddingStart="@dimen/paypal_checkout_padding_16x"
+    android:paddingLeft="@dimen/paypal_checkout_padding_16x"
+    android:paddingTop="@dimen/paypal_checkout_padding_16x"
+    android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+    android:paddingRight="@dimen/paypal_checkout_padding_16x"
+    android:paddingBottom="@dimen/paypal_checkout_padding_16x">
+
+    <TextView
+        android:id="@+id/dialog_title_tv"
+        style="@style/PYPLTextViewTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center_horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dialog Title" />
+
+    <TextView
+        android:id="@+id/dialog_description_tv"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/paypal_checkout_padding_16x"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_24x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_title_tv"
+        android:visibility="gone"
+        tools:text="Dialog Description" />
+
+    <LinearLayout
+        android:id="@+id/feedback_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingTop="@dimen/paypal_checkout_padding_24x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dialog_description_tv">
+
+        <RadioButton
+            android:id="@+id/change_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/something_not_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+        <EditText
+            android:id="@+id/add_feedback_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="2"
+            android:lines="2"
+            android:textSize="16sp"
+            android:visibility="gone"
+            android:hint="@string/paypal_checkout_leaving_paypal_write_your_feedback"
+            app:layout_constraintStart_toStartOf="@+id/something_not_right"
+            app:layout_constraintBottom_toTopOf="@+id/something_not_right"
+            android:importantForAutofill="no">
+        </EditText>
+
+        <RadioButton
+            android:id="@+id/prefer_not_say"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </RadioButton>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/dialog_positive_tv"
+        style="@style/PYPLTextViewButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:paddingStart="@dimen/paypal_checkout_padding_4x"
+        android:paddingLeft="@dimen/paypal_checkout_padding_4x"
+        android:paddingTop="@dimen/paypal_checkout_padding_24x"
+        android:paddingEnd="@dimen/paypal_checkout_padding_4x"
+        android:paddingRight="@dimen/paypal_checkout_padding_4x"
+        app:layout_constraintTop_toBottomOf="@+id/feedback_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/dialog_pb"
+        android:layout_width="@dimen/paypal_checkout_dialog_maker_spinner_width"
+        android:layout_height="@dimen/paypal_checkout_dialog_maker_spinner_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/dialog_negative_tv"
+        style="@style/PYPLTextViewButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_24x"
+        android:layout_marginRight="@dimen/paypal_checkout_margin_24x"
+        android:paddingStart="@dimen/paypal_checkout_padding_4x"
+        android:paddingLeft="@dimen/paypal_checkout_padding_4x"
+        android:paddingTop="@dimen/paypal_checkout_padding_24x"
+        android:paddingEnd="@dimen/paypal_checkout_padding_4x"
+        android:paddingRight="@dimen/paypal_checkout_padding_4x"
+        app:layout_constraintBaseline_toBaselineOf="@id/dialog_positive_tv"
+        app:layout_constraintEnd_toStartOf="@id/dialog_positive_tv" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

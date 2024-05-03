@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cart_details_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/show_product_details_arrow"
+        style="@style/PYPLTextViewDisplayStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:padding="@dimen/paypal_checkout_padding_8x"
+        android:drawablePadding="@dimen/paypal_checkout_padding_5x"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        app:drawableEndCompat="@drawable/paypal_checkout_ic_expand_close" />
+
+    <TextView
+        android:id="@+id/over_capture_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/paypal_checkout_padding_16x"
+        android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+        android:paddingStart="@dimen/paypal_checkout_padding_24x"
+        android:paddingEnd="@dimen/paypal_checkout_padding_24x"
+        android:textColor="@color/paypal_checkout_gray_color_600"
+        tools:text="@string/paypal_overcapture_expanded_details_long_text"
+        />
+
+    <LinearLayout
+        android:id="@+id/cart_list_parent_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/cart_item_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+        <RelativeLayout
+            android:id="@+id/line_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginLeft="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+            android:layout_marginEnd="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginRight="@dimen/paypal_checkout_margin_16x">
+
+            <!-- Sub total -->
+            <TextView
+                android:id="@+id/item_total_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/subtotal_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@+id/item_total_amount_textview"
+                android:text="@string/paypal_checkout_item_total" />
+
+            <!-- Tax -->
+            <TextView
+                android:id="@+id/tax_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtotal_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/tax_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subtotal_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@+id/tax_amount_textview"
+                android:text="@string/paypal_checkout_tax" />
+
+            <!-- Shipping -->
+            <TextView
+                android:id="@+id/shipping_and_handling_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tax_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/shipping_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tax_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@id/shipping_and_handling_amount_textview"
+                android:text="@string/paypal_checkout_shipping_handling" />
+
+            <!-- Shipping discount -->
+            <TextView
+                android:id="@+id/shipping_discount_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipping_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/shipping_discount_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipping_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@+id/shipping_discount_amount_textview"
+                android:text="@string/paypal_checkout_shipping_discount" />
+
+            <!--Discount -->
+
+            <TextView
+                android:id="@+id/discount_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipping_discount_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/discount_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/shipping_discount_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@+id/discount_amount_textview"
+                android:text="@string/paypal_checkout_discount" />
+
+            <!-- Insurance -->
+            <TextView
+                android:id="@+id/insurance_amount_textview"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/discount_label"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+            <TextView
+                android:id="@+id/insurance_label"
+                style="@style/PYPLTextViewCaption1Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/discount_label"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+                android:layout_toStartOf="@+id/insurance_amount_textview"
+                android:text="@string/paypal_checkout_insurance" />
+
+            <TextView
+                android:id="@+id/grand_total_amount_textview"
+                style="@style/PYPLTextViewBody2Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_16x" />
+
+            <!-- Total -->
+            <TextView
+                style="@style/PYPLTextViewBody2Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+                android:layout_toStartOf="@+id/grand_total_amount_textview"
+                android:text="@string/paypal_checkout_total" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/paypal_checkout_divider_height"
+                android:layout_below="@+id/insurance_label"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+                android:background="@color/paypal_checkout_gray_color_300" />
+
+            <View
+                android:id="@+id/bottom_break"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/paypal_checkout_product_total_divider_height"
+                android:layout_below="@+id/grand_total_amount_textview"
+                android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+                android:background="@color/paypal_checkout_gray_color_300" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        tools:context=".login.OtpErrorFragment" android:tag="layout/fragment_otp_error_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/errorTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_32x"
+            android:layout_marginTop="@dimen/margin_48x"
+            android:gravity="center"
+            android:text="@string/paypal_auth_otp_login_something_went_wrong"
+            android:textAppearance="@style/PYPLTextViewTitleStyle3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/contentTextView"
+            style="@style/PYPLTextViewTitleStyle4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_32x"
+            android:layout_marginTop="@dimen/margin_8x"
+            android:gravity="center"
+            android:text="@string/paypal_auth_otp_login_try_again_later"
+            app:layout_constraintTop_toBottomOf="@id/errorTitle" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/usePasswordButton"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="@dimen/margin_56x"
+            android:backgroundTint="@color/primary_blue"
+            android:insetTop="0dp"
+            android:insetBottom="0dp"
+            android:text="@string/paypal_auth_otp_login_error_use_password_instead"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:cornerRadius="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contentTextView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

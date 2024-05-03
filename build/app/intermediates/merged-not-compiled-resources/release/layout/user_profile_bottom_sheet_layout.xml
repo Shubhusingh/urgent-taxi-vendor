@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/userProfileBottomSheetLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior"
+    tools:showIn="@layout/pypl_user_profile_fragment">
+
+    <RelativeLayout
+        android:id="@+id/header_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:elevation="@dimen/paypal_checkout_user_profile_circle_layout_elevation"
+        app:layout_anchor="@+id/nested_scroll_view"
+        app:layout_anchorGravity="top|center"
+        app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior">
+
+    </RelativeLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_peekHeight="@dimen/paypal_checkout_user_profile_nested_scroll_view_peak_hight"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/body_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/paypal_checkout_padding_16x"
+                android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+                android:background="@color/paypal_checkout_white_color"
+                app:layout_behavior="android.support.design.widget.BottomSheetBehavior"
+                tools:layout_editor_absoluteX="0dp">
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/footer_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/body_container"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical"
+                android:background="@color/paypal_checkout_white_color"
+                app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

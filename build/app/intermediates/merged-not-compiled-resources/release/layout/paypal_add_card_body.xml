@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:animateLayoutChanges="true"
+    android:layout_height="wrap_content">
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_name"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+        android:hint="@string/paypal_checkout_name"
+        app:layout_constraintEnd_toStartOf="@id/pypl_addcard_last_name"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:inputType="textVisiblePassword"
+        android:required = "true"
+        />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_last_name"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_last_name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/pypl_addcard_name"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/pypl_addcard_banner"
+        android:background="@drawable/paypal_checkout_pypl_cards_banner_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_name"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/paypal_checkout_paypal_icon_24"
+            android:contentDescription=""
+            android:src="@drawable/paypal_checkout_ic_card_empty_state"
+            android:layout_marginStart="@dimen/paypal_checkout_margin_8x"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_4x"
+            android:layout_marginBottom="@dimen/paypal_checkout_margin_4x"/>
+    </FrameLayout>
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_card_number"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_card_number"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_banner" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_expirity"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+        android:hint="@string/paypal_checkout_exp"
+        app:layout_constraintEnd_toStartOf="@id/pypl_addcard_cvv"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_card_number" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_cvv"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_csc"
+        android:inputType="number"
+        android:maxLength="@integer/paypal_expiry_max_length"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/pypl_addcard_expirity"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_card_number"
+        />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/pypl_addcard_cvv_expiry_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="pypl_addcard_cvv,pypl_addcard_expirity"
+        app:barrierDirection="bottom"/>
+
+    <TextView
+        android:id="@+id/pypl_addcard_address_title"
+        style="@style/TextAppearance.PayPal.Checkout.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_32x"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:text="@string/paypal_checkout_add_card_billing_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_cvv_expiry_barrier" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_address_street"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_paypal_address_line_1"
+        android:inputType="textVisiblePassword"
+        app:roundedDrawable="true"
+        app:autocompleteFilterEnabled="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_address_title" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_address_line_2"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_paypal_apt_ste_bldg"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_address_street" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_add_card_zip"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_4x"
+        android:hint="@string/paypal_checkout_zip_code"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintEnd_toStartOf="@id/pypl_addcard_city"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_address_line_2" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_city"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="@dimen/width_0"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_4x"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_city"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/pypl_add_card_zip"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_address_line_2" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pypl_addcard_city_zip_barrier"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="pypl_addcard_city,pypl_add_card_zip"/>
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalEditText
+        android:id="@+id/pypl_addcard_state"
+        style="@style/Pypl.TextInputLayoutStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_16"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_16"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:hint="@string/paypal_checkout_state"
+        android:inputType="textVisiblePassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_city_zip_barrier" />
+
+    <com.paypal.pyplcheckout.ui.utils.view.PayPalLoadingButton
+        android:id="@+id/pypl_addcard_button"
+        android:layout_width="match_parent"
+        android:paddingTop="@dimen/paypal_checkout_margin_32x"
+        android:layout_height="wrap_content"
+        android:text="@string/paypal_checkout_add_card"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pypl_addcard_state"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16"
+        app:button_color="blue"
+        app:button_shape="rectangle"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

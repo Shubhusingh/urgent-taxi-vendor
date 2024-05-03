@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <com.paypal.pyplcheckout.ui.feature.home.customviews.LinkTextView
+        android:id="@+id/paypal_billing_agreements_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/paypal_checkout_margin_24x"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_24x"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_12x"
+        android:textSize="@dimen/paypal_checkout_text_size_body1"
+        android:textColor="@color/paypal_checkout_greys_black"
+        tools:text="@string/paypal_checkout_billing_agreements_legal_text"
+        />
+
+</merge>

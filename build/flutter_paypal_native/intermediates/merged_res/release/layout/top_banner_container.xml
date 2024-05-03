@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/paypal_checkout_padding_16x"
+    android:orientation="vertical"
+    android:id="@+id/paypal_compound_top_banner">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/onboarding_wrapper"
+            android:orientation="vertical"
+            android:alpha="0"
+            android:gravity="center"
+            android:visibility="gone"
+            android:paddingBottom="@dimen/paypal_checkout_padding_20x"
+            android:paddingTop="@dimen/paypal_checkout_padding_20x"
+            tools:visibility="visible"
+            tools:alpha="1"
+            android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/loading_gift_image"
+                    android:layout_width="wrap_content"
+                    android:src="@drawable/paypal_checkout_loading_gifts"
+                    android:paddingBottom="@dimen/paypal_checkout_padding_20x"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/header_text"
+                    android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+                    android:layout_marginRight="@dimen/paypal_checkout_padding_20x"
+                    android:layout_marginLeft="@dimen/paypal_checkout_padding_20x"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/paypal_checkout_padding_16x"
+                    android:autoSizeTextType="uniform"
+                    android:shadowRadius="@dimen/paypal_checkout_shadow_radius_10x"
+                    android:shadowColor="@color/paypal_checkout_black_solid"
+                    android:lineSpacingExtra="@dimen/paypal_checkout_line_spacing_5x"
+                    style="@style/PYPLTextViewBannerStyle"
+                    android:text="@string/paypal_checkout_pseudo_snackbar_onboarding_message"
+                    android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/switch_checkout_text"
+            android:alpha="0"
+            android:shadowColor="@color/paypal_checkout_black_solid"
+            android:shadowRadius="@dimen/paypal_checkout_shadow_radius_10x"
+            android:paddingTop="@dimen/paypal_checkout_padding_12x"
+            android:paddingBottom="@dimen/paypal_checkout_padding_12x"
+            android:visibility="invisible"
+            android:drawableLeft="@drawable/paypal_checkout_ic_back_arrow_white"
+            style="@style/PYPLLargeCaptionStyle"
+            android:textColor="@color/paypal_checkout_white_color"
+            android:drawablePadding="@dimen/paypal_checkout_padding_5x"
+            android:layout_height="wrap_content"
+            tools:visibility="visible"
+            tools:alpha="1"
+            android:text="@string/paypal_checkout_switch_to_web_checkout"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:id="@+id/switch_bottom_padding"
+            android:layout_height="@dimen/paypal_checkout_padding_24x"/>
+
+</LinearLayout>

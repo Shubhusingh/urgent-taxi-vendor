@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+    android:background="?android:attr/selectableItemBackground"
+    android:paddingStart="@dimen/paypal_checkout_padding_16x"
+    android:paddingLeft="@dimen/paypal_checkout_padding_16x"
+    android:paddingEnd="@dimen/paypal_checkout_padding_16x"
+    android:paddingRight="@dimen/paypal_checkout_padding_16x">
+
+    <LinearLayout
+        android:id="@+id/item_details_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_8x"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/paypal_checkout_padding_4x"
+        android:paddingBottom="@dimen/paypal_checkout_padding_4x"
+        android:weightSum="3"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/item_name_tv"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            tools:text="This is the new Macbook Pro Product 2020" />
+
+        <TextView
+            android:id="@+id/item_price_tv"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="@dimen/paypal_checkout_margin_16x"
+            android:layout_marginLeft="@dimen/paypal_checkout_margin_16x"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textAlignment="gravity"
+            tools:text="100 x $90,000000 USD" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/item_description_tv"
+        style="@style/PYPLTextViewCaption1Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/paypal_checkout_gray_color_600"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_details_container"
+        tools:text="With retina display, space gray 1.4 GHz 8th Gen Intel Core i5 Quad-Core 8GB of 2133 MHz LPDDR3 RAM | 256GB SSD" />
+
+    <View
+        android:id="@+id/line_break"
+        android:layout_width="@dimen/paypal_checkout_match_constraint"
+        android:layout_height="@dimen/paypal_checkout_divider_height"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+        android:background="@color/paypal_checkout_gray_color_300"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_description_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

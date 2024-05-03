@@ -1,0 +1,34 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-merged_res-53:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\03e130c3d9ff71303ad350c00b31e452\\transformed\\appcompat-1.4.2\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.piccmaq.flutter_paypal_native-mergeReleaseResources-51:/values-port/values-port.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Shubham\\.gradle\\caches\\transforms-3\\03e130c3d9ff71303ad350c00b31e452\\transformed\\appcompat-1.4.2\\res\\values-port\\values-port.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "55",
+                        "endOffsets": "106"
+                    }
+                }
+            ]
+        }
+    ]
+}

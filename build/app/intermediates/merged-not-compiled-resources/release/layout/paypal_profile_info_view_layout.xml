@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/payPalProfileInfoContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/userProfileNameTextView"
+        style="@style/PYPLTextViewTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/userProfileEmailTextView"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userProfileNameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x" />
+
+</RelativeLayout>

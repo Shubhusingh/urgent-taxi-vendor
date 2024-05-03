@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/compound_header_parent_container"
+    android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/profilePicLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/paypal_checkout_profile_pic_container_elevation"
+        android:minHeight="@dimen/paypal_checkout_profile_pic_container_min_height"
+        app:layout_anchorGravity="center"
+        app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/initialProfilePicTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paypal_checkout_rounded_view"
+            android:clickable="true"
+            android:gravity="center"
+            android:contentDescription="@string/paypal_checkout_user_profile_icon"
+            style="@style/PYPLTextViewTitle1Style"
+            android:textColor="@color/paypal_checkout_white_color"
+            android:visibility="gone" />
+
+        <com.paypal.pyplcheckout.ui.feature.home.customviews.CircleImageView
+            android:id="@+id/profilePicCircleImageView"
+            android:layout_width="@dimen/paypal_checkout_profile_pic_width"
+            android:layout_height="@dimen/paypal_checkout_profile_pic_height"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/paypal_checkout_user_profile_icon" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_header_margin_top"
+        android:background="@drawable/paypal_checkout_rounded_dialog"
+        android:paddingLeft="@dimen/paypal_checkout_margin_8x"
+        android:paddingTop="@dimen/paypal_checkout_padding_8x"
+        android:paddingRight="@dimen/paypal_checkout_margin_8x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/paypalLogoImageView"
+            android:layout_width="@dimen/paypal_checkout_paypal_checkout_logo"
+            android:layout_height="@dimen/paypal_checkout_paypal_checkout_logo"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:contentDescription="@string/paypal_checkout_paypal_logo"
+            android:elevation="@dimen/paypal_checkout_paypal_logo_elevation"
+            android:padding="@dimen/paypal_checkout_padding_14x"
+            app:layout_behavior="com.paypal.pyplcheckout.customviews.AutoCloseBottomSheetBehavior.AutoCloseBottomSheetBehavior"
+            app:srcCompat="@drawable/paypal_checkout_ic_logo" />
+
+        <ImageView
+            android:id="@+id/exit_button_image"
+            android:layout_width="@dimen/paypal_checkout_paypal_exit_button"
+            android:layout_height="@dimen/paypal_checkout_paypal_exit_button"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:autoMirrored="true"
+            android:clickable="true"
+            android:contentDescription="@string/paypal_checkout_cancel"
+            android:focusable="true"
+            android:padding="@dimen/paypal_checkout_padding_4x"
+            android:rotationY="@integer/locale_mirror_flip"
+            app:srcCompat="@drawable/paypal_checkout_exit_icon" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/paypal_checkout_padding_16x">
+
+
+        <ImageView
+            android:id="@+id/alert_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/paypal_checkout_margin_8x"
+            android:background="@drawable/paypal_checkout_ic_checkmark_circle"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/alert_header"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/paypal_checkout_padding_8x"
+            android:paddingEnd="@dimen/paypal_checkout_padding_8x"
+            android:paddingBottom="@dimen/paypal_checkout_padding_16x"
+            android:textSize="@dimen/text_size_16"
+            android:includeFontPadding="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/alert_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/alert_body"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_16"
+            android:paddingStart="@dimen/paypal_checkout_padding_8x"
+            android:paddingEnd="@dimen/paypal_checkout_padding_8x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/alert_icon"
+            app:layout_constraintTop_toBottomOf="@+id/alert_header" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

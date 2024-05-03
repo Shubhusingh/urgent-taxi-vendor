@@ -1,0 +1,14 @@
+io.flutter.plugins.urllauncher.url_launcher_android-core-1.10.1-0 C:\Users\Shubham\.gradle\caches\transforms-3\1f698f9ff0f39b544bfbc2be1119d33a\transformed\core-1.10.1\res
+io.flutter.plugins.urllauncher.url_launcher_android-browser-1.5.0-1 C:\Users\Shubham\.gradle\caches\transforms-3\7dc8b8c15022a169693e455fd26f508d\transformed\browser-1.5.0\res
+io.flutter.plugins.urllauncher.url_launcher_android-jetified-window-1.0.0-beta04-2 C:\Users\Shubham\.gradle\caches\transforms-3\8d901f4add6c80df75568b5a0845e431\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.urllauncher.url_launcher_android-jetified-annotation-experimental-1.3.0-3 C:\Users\Shubham\.gradle\caches\transforms-3\a7bf7545bceb320c59146cc5a5428772\transformed\jetified-annotation-experimental-1.3.0\res
+io.flutter.plugins.urllauncher.url_launcher_android-lifecycle-runtime-2.3.1-4 C:\Users\Shubham\.gradle\caches\transforms-3\da09b679b820b5d63d331133130210d2\transformed\lifecycle-runtime-2.3.1\res
+io.flutter.plugins.urllauncher.url_launcher_android-jetified-window-java-1.0.0-beta04-5 C:\Users\Shubham\.gradle\caches\transforms-3\f65fe4f86386896c717c257f7b9c825a\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.urllauncher.url_launcher_android-main-6 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.1\android\src\main\res
+io.flutter.plugins.urllauncher.url_launcher_android-release-7 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\url_launcher_android-6.3.1\android\src\release\res
+io.flutter.plugins.urllauncher.url_launcher_android-pngs-8 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\generated\res\pngs\release
+io.flutter.plugins.urllauncher.url_launcher_android-resValues-9 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\generated\res\resValues\release
+io.flutter.plugins.urllauncher.url_launcher_android-rs-10 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\generated\res\rs\release
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-11 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.urllauncher.url_launcher_android-mergeReleaseResources-12 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.urllauncher.url_launcher_android-merged_res-13 D:\UrgentTaxi\cabme_driver\build\url_launcher_android\intermediates\merged_res\release

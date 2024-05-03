@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addManuallyParentView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="@dimen/paypal_checkout_touch_target_min_width"
+    android:minHeight="@dimen/paypal_checkout_touch_target_min_height"
+    android:background="?android:attr/selectableItemBackground">
+
+    <TextView
+        android:id="@+id/addManuallyText"
+        style="@style/PYPLTextViewBody2Style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_12x"
+        android:text="@string/paypal_checkout_add_shipping_add_manually"
+        android:textColor="@color/paypal_checkout_add_card_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/addManuallyImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/paypal_checkout_margin_8x"
+        android:layout_marginEnd="@dimen/paypal_checkout_margin_8x"
+        app:layout_constraintBottom_toBottomOf="@id/addManuallyText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/addManuallyText"
+        app:srcCompat="@drawable/paypal_checkout_add_manually_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+com.tekartik.sqflite-jetified-annotation-experimental-1.1.0-0 C:\Users\Shubham\.gradle\caches\transforms-3\27e971d9d25ce0c04c4ba317ec1c9d40\transformed\jetified-annotation-experimental-1.1.0\res
+com.tekartik.sqflite-jetified-window-1.0.0-beta04-1 C:\Users\Shubham\.gradle\caches\transforms-3\8d901f4add6c80df75568b5a0845e431\transformed\jetified-window-1.0.0-beta04\res
+com.tekartik.sqflite-core-1.6.0-2 C:\Users\Shubham\.gradle\caches\transforms-3\9cfd29e3b5b88686f990ee84187768d2\transformed\core-1.6.0\res
+com.tekartik.sqflite-jetified-window-java-1.0.0-beta04-3 C:\Users\Shubham\.gradle\caches\transforms-3\f65fe4f86386896c717c257f7b9c825a\transformed\jetified-window-java-1.0.0-beta04\res
+com.tekartik.sqflite-main-4 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.3\android\src\main\res
+com.tekartik.sqflite-release-5 C:\Users\Shubham\AppData\Local\Pub\Cache\hosted\pub.dev\sqflite-2.3.3\android\src\release\res
+com.tekartik.sqflite-pngs-6 D:\UrgentTaxi\cabme_driver\build\sqflite\generated\res\pngs\release
+com.tekartik.sqflite-resValues-7 D:\UrgentTaxi\cabme_driver\build\sqflite\generated\res\resValues\release
+com.tekartik.sqflite-rs-8 D:\UrgentTaxi\cabme_driver\build\sqflite\generated\res\rs\release
+com.tekartik.sqflite-mergeReleaseResources-9 D:\UrgentTaxi\cabme_driver\build\sqflite\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.tekartik.sqflite-mergeReleaseResources-10 D:\UrgentTaxi\cabme_driver\build\sqflite\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.tekartik.sqflite-merged_res-11 D:\UrgentTaxi\cabme_driver\build\sqflite\intermediates\merged_res\release

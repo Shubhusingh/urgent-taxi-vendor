@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title_label"
+        style="@style/PYPLTextViewBody1Style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground"
+        android:paddingTop="@dimen/paypal_checkout_padding_16x"
+        android:paddingBottom="@dimen/paypal_checkout_padding_16x" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/paypal_checkout_divider_height"
+        android:layout_below="@+id/title_label"
+        android:layout_marginBottom="@dimen/paypal_checkout_margin_16x"
+        android:background="@color/paypal_checkout_gray_color_300" />
+
+</merge>
+

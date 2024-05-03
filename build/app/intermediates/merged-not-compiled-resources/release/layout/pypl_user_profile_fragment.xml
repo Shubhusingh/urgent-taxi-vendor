@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.feature.userprofile.view.fragments.PYPLUserProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/userProfileBgdMaskLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/paypal_checkout_background_scrim_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/userProfileBottomSheetLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.paypal.pyplcheckout.ui.feature.home.customviews.AutoCloseBottomSheetBehavior">
+
+        <include layout="@layout/user_profile_bottom_sheet_layout" />
+
+    </FrameLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

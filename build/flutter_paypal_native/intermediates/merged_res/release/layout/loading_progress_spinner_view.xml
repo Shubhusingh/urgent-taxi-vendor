@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/full_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible">
+
+        <FrameLayout
+            android:id="@+id/image_wrapper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="@dimen/paypal_checkout_progress_bar_width"
+                android:layout_height="@dimen/paypal_checkout_progress_bar_height"
+                android:elevation="@dimen/paypal_checkout_small_elevation"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/paypal_checkout_custom_progress"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/loading_progress_iv"
+                android:layout_width="@dimen/paypal_checkout_progress_img_width"
+                android:layout_height="@dimen/paypal_checkout_progress_img_height"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/paypal_checkout_ic_newestpplogoforspinner" />
+
+            <ImageView
+                android:id="@+id/three_ds_progress_iv"
+                android:layout_width="@dimen/paypal_checkout_three_ds_progress_img_size"
+                android:layout_height="@dimen/paypal_checkout_three_ds_progress_img_size"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/paypal_checkout_ic_card" />
+
+            <ImageView
+                android:id="@+id/crypto_progress_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/paypal_checkout_ic_store_exit_crypto"/>
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/loading_message_tv"
+            style="@style/PYPLTextViewBody1Style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_wrapper"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/paypal_checkout_margin_16x"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image_wrapper" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

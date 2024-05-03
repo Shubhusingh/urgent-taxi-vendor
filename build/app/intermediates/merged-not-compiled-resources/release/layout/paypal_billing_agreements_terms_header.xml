@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/paypal_checkout_rounded_dialog"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/back_arrow"
+        style="@style/PYPLBackButtonStyle" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/PYPLTextViewTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.33"
+        android:text="@string/paypal_checkout_billing_agreements_terms_header"/>
+
+    <!-- This view provides the same offset as the width of the back button,
+        centering the above TextView in the parent-->
+    <Space
+        android:id="@+id/backButtonWidthOffsetSpace"
+        style="@style/PYPLHorizontalSpace.BackButtonOffset"/>
+
+</LinearLayout>
